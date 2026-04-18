@@ -781,12 +781,12 @@ function LandingPage() {
               <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center mb-5 shadow-lg shadow-rose-900/40">
                 <LogIn className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Existing Providers</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Existing Notaries</h3>
               <p className="text-sm text-slate-300 leading-relaxed mb-5">
-                Already part of our network? Sign in to your OpenSked™ provider portal.
+                Already part of our network? Sign in to your OpenSked™ notary portal.
               </p>
               <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-300 group-hover:text-rose-200">
-                Provider Login <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                Notary Login <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
             </a>
 
