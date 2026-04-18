@@ -4,6 +4,7 @@ import {
   Shield, MapPin, Calendar, Zap, ArrowRight, Check, CheckCircle2, Phone, Mail, Clock, Award,
   Home as HomeIcon, Briefcase, HeartPulse, Users, Car, FileText,
   CalendarCheck, ShieldCheck, Video, Globe2, Stamp, Sparkles, CalendarClock,
+  UserPlus, LogIn,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
