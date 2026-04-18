@@ -562,7 +562,7 @@ function LandingPage() {
                     <it.icon className="h-5 w-5 text-white" />
                   </div>
                   <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">{it.label}</p>
-                  <p className="text-slate-900 font-semibold">{it.value}</p>
+                  <p className="text-slate-900 font-semibold text-sm whitespace-nowrap">{it.value}</p>
                 </>
               );
               return it.href ? (
