@@ -30,11 +30,17 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Virginia Notary — Online Electronic Notary" },
+      { title: "Virginia Notary — Remote Online Notarizations" },
       { name: "description", content: "Notarize any document online in minutes with a commissioned Virginia electronic notary. Secure, fast, legally binding nationwide." },
       { name: "author", content: "Virginia Notary" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Virginia Notary — Remote Online Notarizations" },
+      { name: "twitter:title", content: "Virginia Notary — Remote Online Notarizations" },
+      { property: "og:description", content: "Notarize any document online in minutes with a commissioned Virginia electronic notary. Secure, fast, legally binding nationwide." },
+      { name: "twitter:description", content: "Notarize any document online in minutes with a commissioned Virginia electronic notary. Secure, fast, legally binding nationwide." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Q91xJKpHYkSxrpQPzVOJpn2sUzk1/social-images/social-1776549326195-Untitled_design.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Q91xJKpHYkSxrpQPzVOJpn2sUzk1/social-images/social-1776549326195-Untitled_design.webp" },
     ],
     links: [
       {
