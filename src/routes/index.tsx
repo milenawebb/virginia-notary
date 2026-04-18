@@ -668,6 +668,65 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* Join our Team */}
+      <section id="join-team" className="py-24 lg:py-32 px-6 bg-gradient-to-br from-rose-950 via-pink-950 to-slate-950 scroll-mt-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
+          <div className="absolute top-1/4 left-1/4 h-72 w-72 rounded-full bg-rose-500 blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-pink-500 blur-3xl" />
+        </div>
+
+        <div className="max-w-5xl mx-auto relative">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold text-rose-300 uppercase tracking-wider mb-3">Careers</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+              Join our Team
+            </h2>
+            <p className="text-base lg:text-lg text-slate-300 mt-5 max-w-2xl mx-auto leading-relaxed">
+              Are you a Notary Public looking to grow your business? Sign in to your OpenSked™ provider account
+              to manage appointments, accept new clients, and access training resources.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
+            <a
+              href="https://opensked.com/provider/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-8 rounded-3xl bg-white/5 backdrop-blur border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1"
+            >
+              <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center mb-5 shadow-lg shadow-rose-900/40">
+                <LogIn className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Existing Providers</h3>
+              <p className="text-sm text-slate-300 leading-relaxed mb-5">
+                Already part of our network? Sign in to your OpenSked™ provider portal.
+              </p>
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-300 group-hover:text-rose-200">
+                Provider Login <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </a>
+
+            <a
+              href="https://opensked.com/provider/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-8 rounded-3xl bg-gradient-to-br from-rose-600 to-pink-700 hover:from-rose-500 hover:to-pink-600 transition-all hover:-translate-y-1 shadow-2xl shadow-pink-900/40"
+            >
+              <div className="h-12 w-12 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center mb-5">
+                <UserPlus className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">New Notaries</h3>
+              <p className="text-sm text-rose-50 leading-relaxed mb-5">
+                Become a certified notary partner and start receiving client bookings through OpenSked™.
+              </p>
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white">
+                Apply to Join <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
