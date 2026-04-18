@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
 const HERO_BADGES = [
   { icon: Shield, label: "Licensed & Bonded" },
   { icon: MapPin, label: "All 50 States & International" },
-  { icon: Calendar, label: "Available 7 Days" },
+  { icon: Calendar, label: "Available 7 days/week" },
   { icon: Zap, label: "Emergency Appointments" },
 ];
 
