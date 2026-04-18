@@ -227,21 +227,21 @@ function LandingPage() {
         {/* Mobile / Tablet dropdown menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-slate-100 bg-white/95 backdrop-blur-xl">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-1">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex flex-col items-center gap-0.5">
               {NAV_LINKS.map((l) => (
                 <a
                   key={l.href}
                   href={l.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="px-3 py-3 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors"
+                  className="w-full text-center px-3 py-1.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors"
                 >
                   {l.label}
                 </a>
               ))}
-              <div className="mt-3 pt-4 border-t border-slate-100 flex flex-col gap-3">
+              <div className="w-full mt-2 pt-2 border-t border-slate-100 flex flex-col items-center gap-2">
                 <a
                   href="tel:+15406030359"
-                  className="flex items-center gap-2 px-3 py-2 text-sm text-slate-600 hover:text-slate-900"
+                  className="flex items-center gap-2 px-3 py-1 text-sm text-slate-600 hover:text-slate-900"
                 >
                   <Phone className="h-4 w-4" />
                   (540) 603-0359
