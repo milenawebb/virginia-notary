@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Toaster, toast } from "sonner";
-import milena from "@/assets/milena.jpg";
+import globalNetwork from "@/assets/global-network.jpg";
 import logo from "@/assets/virginia-notary-logo.png";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
 
@@ -211,59 +211,71 @@ function LandingPage() {
           </div>
 
           <div className="mt-20 max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center text-left">
-              <div className="relative">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start text-left">
+              <div className="relative lg:sticky lg:top-24">
                 <div className="rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 border border-slate-100">
                   <img
-                    src={milena}
-                    alt="Milena Webb, Electronic Notary Public"
+                    src={globalNetwork}
+                    alt="Global notary network connecting clients worldwide"
                     width={768}
                     height={960}
+                    loading="lazy"
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="absolute -bottom-6 -right-4 lg:-right-6 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 max-w-[260px] border border-slate-100">
+                <div className="absolute -bottom-6 -right-4 lg:-right-6 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 max-w-[280px] border border-slate-100">
                   <div className="h-10 w-10 rounded-full bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center shrink-0">
                     <Award className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-slate-900 text-sm">Certified & Bonded</p>
-                    <p className="text-xs text-slate-500">Years of experience</p>
+                    <p className="font-semibold text-slate-900 text-sm">Certified, Bonded & Insured</p>
+                    <p className="text-xs text-slate-500">Trusted notary network</p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Meet your notary</p>
+                <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">About Virginia Notary</p>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-5">
+                  Connecting the World — One Document at a Time
+                </h2>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  I am <span className="font-semibold text-slate-900">Milena Webb</span>, a certified, bonded, insured, and experienced
-                  Electronic Notary Public serving clients across Virginia and all 50 states.
+                  At <span className="font-semibold text-slate-900">Virginia Notary</span>, we are a trusted network of certified, bonded, and insured notary professionals dedicated to making the notarization process simple, secure, and accessible — no matter where you are in the world.
                 </p>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  With years of experience in remote online notarizations, I provide secure,
-                  reliable, and professional notary services using one of the most trusted
-                  platforms in the US.
+                  Based in the Commonwealth of Virginia, our notaries are uniquely positioned to serve clients across all 50 United States and internationally. Virginia's progressive Remote Online Notarization laws allow our certified electronic notaries to legally notarize documents for clients located anywhere in the world — from London to Tokyo, Dubai to São Paulo — as long as our notaries are physically present in Virginia at the time of signing.
                 </p>
 
-                <div className="mt-8 rounded-2xl bg-white p-6 border border-slate-100 shadow-sm">
-                  <p className="text-rose-800 text-xs font-semibold tracking-wider uppercase mb-4">
-                    Commission Information
-                  </p>
-                  <dl className="space-y-2.5">
-                    {[
-                      ["Name", "Milena Webb"],
-                      ["Title", "Electronic Notary Public"],
-                      ["Jurisdiction", "Commonwealth of Virginia"],
-                      ["Registration #", "7873500"],
-                      ["Commission Expires", "Jan 31, 2028"],
-                    ].map(([k, v]) => (
-                      <div key={k} className="flex justify-between gap-4 text-sm">
-                        <dt className="text-slate-500">{k}</dt>
-                        <dd className={`font-medium ${k === "Registration #" ? "text-rose-800 font-semibold" : "text-slate-900"}`}>{v}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div>
+                <h3 className="mt-8 text-xl font-bold text-slate-900">Why Virginia?</h3>
+                <p className="mt-3 text-slate-600 leading-relaxed">
+                  Virginia was one of the first states in the nation to enact comprehensive Remote Online Notarization legislation, making it a leader in digital notarization services. Documents notarized by our Virginia-commissioned notaries carry full legal authority and are widely accepted by courts, financial institutions, government agencies, and international bodies worldwide.
+                </p>
+
+                <h3 className="mt-8 text-xl font-bold text-slate-900">What We Do</h3>
+                <p className="mt-3 text-slate-600 leading-relaxed">
+                  Whether you need a real estate closing completed remotely, a business contract notarized for international use, medical documents authenticated, or family paperwork handled with care — our team is here for you. We specialize in:
+                </p>
+                <ul className="mt-4 space-y-2.5">
+                  {[
+                    "Remote Online Notarizations (RON) via secure video platform",
+                    "Mobile Notary services throughout Charlottesville and Central Virginia",
+                    "International document notarization for clients worldwide",
+                    "Emergency and same-day appointments available 7 days a week",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3 text-slate-700">
+                      <CheckCircle2 className="h-5 w-5 text-rose-800 shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <h3 className="mt-8 text-xl font-bold text-slate-900">Our Commitment</h3>
+                <p className="mt-3 text-slate-600 leading-relaxed">
+                  We believe geography should never be a barrier to getting important documents notarized. Our team combines deep legal expertise with cutting-edge technology to deliver a seamless, professional experience — whether you are signing from your living room in Richmond or a hotel room in Paris.
+                </p>
+                <p className="mt-3 text-slate-600 leading-relaxed">
+                  Every notarization we perform meets the highest standards of security, compliance, and professionalism. Your documents are in trusted hands.
+                </p>
               </div>
             </div>
           </div>
