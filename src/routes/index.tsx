@@ -387,7 +387,7 @@ function LandingPage() {
       {/* How it works */}
       <section id="how" className="py-24 lg:py-32 px-6 bg-gradient-to-br from-slate-950 via-rose-950 to-slate-950 text-white scroll-mt-20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-sm font-semibold text-rose-300 uppercase tracking-wider mb-3">Simple Process</p>
+          <p className="text-sm font-semibold text-rose-300 uppercase tracking-wider mb-3">Simple Online Process</p>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 tracking-tight">
             Notarize in 3 simple steps
           </h2>
