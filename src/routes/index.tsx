@@ -12,6 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Toaster, toast } from "sonner";
 import milena from "@/assets/milena.jpg";
 import logo from "@/assets/virginia-notary-logo.png";
+import logoDark from "@/assets/virginia-notary-logo-dark.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -589,7 +590,7 @@ function LandingPage() {
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Virginia Notary" className="h-8 w-auto brightness-0 invert opacity-90" />
+            <img src={logoDark} alt="Virginia Notary" className="h-8 w-auto" />
           </div>
           <p className="text-center md:text-left">
             © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
