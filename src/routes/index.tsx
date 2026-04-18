@@ -263,10 +263,28 @@ function LandingPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Services */}
+          <div id="about" className="mt-20 max-w-6xl mx-auto scroll-mt-20">
+            <div className="text-center mb-10">
+              <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Why Choose Us</p>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                Why hire us?
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {REASONS.map((r) => (
+                <div
+                  key={r}
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white border border-slate-100 shadow-sm"
+                >
+                  <div className="h-7 w-7 rounded-full bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shrink-0">
+                    <Check className="h-4 w-4 text-white" strokeWidth={3} />
+                  </div>
+                  <span className="text-sm font-medium text-slate-700">{r}</span>
+                </div>
+              ))}
+            </div>
+          </div>
       <section id="services" className="py-24 lg:py-32 px-6 bg-white border-y border-slate-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
