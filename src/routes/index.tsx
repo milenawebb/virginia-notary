@@ -176,7 +176,7 @@ function LandingPage() {
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.08] max-w-5xl mx-auto tracking-tight">
             Professional Notary Services{" "}
-            <span className="bg-gradient-to-r from-rose-600 via-pink-700 to-fuchsia-700 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-700 via-rose-700 to-rose-900 bg-clip-text text-transparent">
               from the comfort of your home
             </span>
           </h1>
