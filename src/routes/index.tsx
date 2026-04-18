@@ -112,6 +112,12 @@ const NAV_LINKS = [
 
 function LandingPage() {
   const [submitting, setSubmitting] = useState(false);
+  const [service, setService] = useState("");
+
+  const selectService = (kind: "ron" | "mobile") => {
+    setService(kind === "ron" ? "Remote Online Notarization (RON)" : "Mobile Notary");
+    document.getElementById("book")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -472,6 +478,8 @@ function LandingPage() {
                     id="service"
                     name="service"
                     required
+                    value={service}
+                    onChange={(e) => setService(e.target.value)}
                     className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-600"
                   >
                     <option value="">Select service</option>
