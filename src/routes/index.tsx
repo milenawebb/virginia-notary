@@ -305,7 +305,7 @@ function LandingPage() {
               <a
                 href="#book?service=ron"
                 onClick={(e) => { e.preventDefault(); selectService("ron"); }}
-                className="relative block text-left rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-rose-600 to-pink-700 text-white shadow-2xl shadow-pink-600/40 hover:-translate-y-1 hover:shadow-pink-600/50 transition-all"
+                className="relative block text-left rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-rose-800 to-pink-900 text-white shadow-2xl shadow-pink-900/40 hover:-translate-y-1 hover:shadow-pink-900/50 transition-all"
               >
                 <span className="absolute -top-3 left-8 bg-white text-pink-700 text-xs font-bold px-3 py-1 rounded-full shadow">
                   Recommended
