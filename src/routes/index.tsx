@@ -801,20 +801,18 @@ function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-          <div className="flex items-center gap-2">
-            <div className="bg-white rounded-xl px-4 py-2 inline-flex items-center shadow-md">
-              <img src={logoDark} alt="Virginia Notary" className="h-9 w-auto" />
-            </div>
+        <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
+          <div className="bg-white rounded-lg px-3 py-1.5 inline-flex items-center shadow-sm shrink-0">
+            <img src={logoDark} alt="Virginia Notary" className="h-7 w-auto" />
           </div>
-          <p className="text-center md:text-left">
+          <p className="text-center order-last lg:order-none lg:text-left">
             © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
             <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold">OpenSked™</span>
           </p>
-          <div className="flex items-center gap-5">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 shrink-0">
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Privacy</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Terms</a>
+            <a href="#" className="hover:text-white transition-colors whitespace-nowrap">Cookie Policy</a>
           </div>
         </div>
       </footer>
