@@ -66,7 +66,7 @@ function PrivacyPage() {
       </ul>
       <p>
         To exercise any of these rights, contact us at{" "}
-        <a href="mailto:privacy@virginianotary.com">privacy@virginianotary.com</a>. We will verify
+        <a href="mailto:notary@virginia-notary.com">notary@virginia-notary.com</a>. We will verify
         your request and respond within the timeframes required by applicable law.
       </p>
 
@@ -100,7 +100,7 @@ function PrivacyPage() {
       <h2>9. Contact Us</h2>
       <p>
         Virginia Notary &middot;{" "}
-        <a href="mailto:privacy@virginianotary.com">privacy@virginianotary.com</a>
+        <a href="mailto:notary@virginia-notary.com">notary@virginia-notary.com</a>
       </p>
     </LegalPage>
   );

@@ -78,7 +78,7 @@ function CookiePolicyPage() {
         have the right to opt out of the sale or sharing of your personal information for targeted
         advertising. We do not sell personal information for monetary value. To submit a privacy
         request, email{" "}
-        <a href="mailto:privacy@virginianotary.com">privacy@virginianotary.com</a>.
+        <a href="mailto:notary@virginia-notary.com">notary@virginia-notary.com</a>.
       </p>
 
       <h2>5. Third-Party Cookies</h2>
@@ -97,7 +97,7 @@ function CookiePolicyPage() {
       <h2>7. Contact</h2>
       <p>
         Virginia Notary &middot;{" "}
-        <a href="mailto:privacy@virginianotary.com">privacy@virginianotary.com</a>
+        <a href="mailto:notary@virginia-notary.com">notary@virginia-notary.com</a>
       </p>
     </LegalPage>
   );
