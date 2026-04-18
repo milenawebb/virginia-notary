@@ -228,7 +228,7 @@ function LandingPage() {
                     <Award className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-slate-900 text-sm">Certified, Bonded & Insured</p>
+                    <p className="font-semibold text-slate-900 text-xs">Certified, Bonded & Insured</p>
                     <p className="text-xs text-slate-500">Trusted notary network</p>
                   </div>
                 </div>
@@ -237,7 +237,7 @@ function LandingPage() {
               <div>
                 <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">About Virginia Notary</p>
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-5">
-                  Connecting the World — One Document at a Time
+                  Services Without Boundaries
                 </h2>
                 <p className="text-lg text-slate-700 leading-relaxed">
                   At <span className="font-semibold text-slate-900">Virginia Notary</span>, we are a trusted network of certified, bonded, and insured notary professionals dedicated to making the notarization process simple, secure, and accessible — no matter where you are in the world.
@@ -246,7 +246,7 @@ function LandingPage() {
                   Based in the Commonwealth of Virginia, our notaries are uniquely positioned to serve clients across all 50 United States and internationally. Virginia's progressive Remote Online Notarization laws allow our certified electronic notaries to legally notarize documents for clients located anywhere in the world — from London to Tokyo, Dubai to São Paulo — as long as our notaries are physically present in Virginia at the time of signing.
                 </p>
 
-                <h3 className="mt-8 text-xl font-bold text-slate-900">Why Virginia?</h3>
+                <h3 className="mt-8 text-xl font-bold text-slate-900">The Virginia Advantage</h3>
                 <p className="mt-3 text-slate-600 leading-relaxed">
                   Virginia was one of the first states in the nation to enact comprehensive Remote Online Notarization legislation, making it a leader in digital notarization services. Documents notarized by our Virginia-commissioned notaries carry full legal authority and are widely accepted by courts, financial institutions, government agencies, and international bodies worldwide.
                 </p>
