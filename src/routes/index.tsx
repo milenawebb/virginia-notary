@@ -285,6 +285,69 @@ function LandingPage() {
               ))}
             </div>
           </div>
+
+          <div className="mt-20">
+            <div className="text-center mb-10">
+              <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Choose Your Service</p>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                Two ways to get notarized
+              </h2>
+              <p className="text-sm text-slate-500 mt-3">Click a card to start your booking.</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <a
+                href="#book?service=ron"
+                onClick={(e) => { e.preventDefault(); selectService("ron"); }}
+                className="relative block text-left rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-rose-600 to-pink-700 text-white shadow-2xl shadow-pink-600/40 hover:-translate-y-1 hover:shadow-pink-600/50 transition-all"
+              >
+                <span className="absolute -top-3 left-8 bg-white text-pink-700 text-xs font-bold px-3 py-1 rounded-full shadow">
+                  Recommended
+                </span>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="h-11 w-11 rounded-xl bg-white/15 flex items-center justify-center">
+                    <Globe2 className="h-5 w-5 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold">Remote Online Notarization</h3>
+                </div>
+                <ul className="space-y-3">
+                  {RON_FEATURES.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5 text-sm">
+                      <Check className="h-4 w-4 mt-0.5 shrink-0 text-white" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold">
+                  Book RON <ArrowRight className="h-4 w-4" />
+                </span>
+              </a>
+
+              <a
+                href="#book?service=mobile"
+                onClick={(e) => { e.preventDefault(); selectService("mobile"); }}
+                className="relative block text-left rounded-3xl p-8 lg:p-10 bg-white border border-slate-100 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="h-11 w-11 rounded-xl bg-slate-100 flex items-center justify-center">
+                    <Car className="h-5 w-5 text-slate-700" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900">Mobile Notary</h3>
+                </div>
+                <ul className="space-y-3">
+                  {MOBILE_FEATURES.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5 text-sm">
+                      <Check className="h-4 w-4 mt-0.5 shrink-0 text-green-500" />
+                      <span className="text-slate-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-pink-700">
+                  Book Mobile <ArrowRight className="h-4 w-4" />
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -344,56 +407,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* Compare */}
-      <section className="py-24 lg:py-32 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Choose Your Service</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Two ways to get notarized
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="relative rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-rose-600 to-pink-700 text-white shadow-2xl shadow-pink-600/40">
-              <span className="absolute -top-3 left-8 bg-white text-pink-700 text-xs font-bold px-3 py-1 rounded-full shadow">
-                Recommended
-              </span>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-11 w-11 rounded-xl bg-white/15 flex items-center justify-center">
-                  <Globe2 className="h-5 w-5 text-white" />
-                </div>
-                <h3 className="text-xl font-bold">Remote Online Notarization</h3>
-              </div>
-              <ul className="space-y-3">
-                {RON_FEATURES.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm">
-                    <Check className="h-4 w-4 mt-0.5 shrink-0 text-white" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="relative rounded-3xl p-8 lg:p-10 bg-white border border-slate-100 shadow-sm">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-11 w-11 rounded-xl bg-slate-100 flex items-center justify-center">
-                  <Car className="h-5 w-5 text-slate-700" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900">Mobile Notary</h3>
-              </div>
-              <ul className="space-y-3">
-                {MOBILE_FEATURES.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm">
-                    <Check className="h-4 w-4 mt-0.5 shrink-0 text-green-500" />
-                    <span className="text-slate-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* Booking form */}
       <section id="book" className="py-24 lg:py-32 px-6 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
