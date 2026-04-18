@@ -87,6 +87,28 @@ const REASONS = [
   "7 days a week availability",
 ];
 
+const RON_FEES = [
+  { tier: "1 seal", price: "$60" },
+  { tier: "2 seals", price: "$120" },
+  { tier: "3–5 seals", price: "$180" },
+  { tier: "6–10 seals", price: "$220" },
+  { tier: "11–15 seals", price: "$280" },
+  { tier: "RE Purchase File", price: "$340", highlight: true },
+  { tier: "RE Refinance File", price: "$300", highlight: true },
+];
+
+const RON_FEE_INCLUSIONS = [
+  "Up to 2 signers",
+  "ID proofing included",
+  "Includes signatures that do not need notarization",
+];
+
+const RON_FEE_NOTES = [
+  "$30 upcharge for each additional signer",
+  "$20 upcharge for each additional 30 minutes after the 1st hour",
+  "$30 flat fee for international signing (signors are outside the US)",
+];
+
 const FAQS = [
   { q: "What is Remote Online Notarization?", a: "RON allows you to have documents notarized via live video call, without needing to meet in person. It's legal, secure, and accepted in all 50 states." },
   { q: "What do I need for a RON session?", a: "A computer or smartphone with camera and microphone, a valid government-issued photo ID, and an internet connection." },
@@ -105,6 +127,7 @@ const CONTACT_ITEMS = [
 
 const NAV_LINKS = [
   { href: "#services", label: "Services" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#how", label: "How It Works" },
   { href: "#about", label: "About" },
   { href: "#faq", label: "FAQ" },
@@ -368,6 +391,81 @@ function LandingPage() {
                 <p className="text-sm text-slate-500 leading-relaxed">{s.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RON Pricing */}
+      <section id="pricing" className="py-24 lg:py-32 px-6 bg-slate-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Remote Online Notarization Fees</p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Transparent, flat-rate pricing
+            </h2>
+            <p className="text-lg text-slate-500 mt-4 max-w-3xl mx-auto">
+              Every package includes ID proofing and signatures that don't require notarization — no hidden fees.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4">
+            {RON_FEES.map((fee) => (
+              <div
+                key={fee.tier}
+                className={`rounded-2xl p-5 border text-center transition-all duration-300 hover:-translate-y-1 ${
+                  fee.highlight
+                    ? "bg-gradient-to-br from-rose-800 to-pink-900 border-transparent text-white shadow-xl shadow-rose-900/30"
+                    : "bg-white border-slate-100 hover:shadow-lg"
+                }`}
+              >
+                <h3 className={`text-sm font-bold mb-2 ${fee.highlight ? "text-white" : "text-slate-900"}`}>
+                  {fee.tier}
+                </h3>
+                <p className={`text-3xl font-extrabold tracking-tight ${fee.highlight ? "text-white" : "text-slate-900"}`}>
+                  {fee.price}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-2xl p-6 border border-slate-100">
+              <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-4 flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-rose-800" />
+                Every package includes
+              </h3>
+              <ul className="space-y-2">
+                {RON_FEE_INCLUSIONS.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
+                    <Check className="h-4 w-4 text-rose-800 mt-0.5 flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl p-6 border border-slate-100">
+              <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-4 flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-rose-800" />
+                Additional fees
+              </h3>
+              <ul className="space-y-2">
+                {RON_FEE_NOTES.map((note) => (
+                  <li key={note} className="flex items-start gap-2 text-sm text-slate-600">
+                    <span className="text-rose-800 mt-0.5">*</span>
+                    <span>{note}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <a href="#book">
+              <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30">
+                Book Your Notarization
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
