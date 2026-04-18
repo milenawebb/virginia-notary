@@ -201,7 +201,7 @@ function LandingPage() {
             </span>
           </h1>
 
-          <p className="text-base lg:text-xl text-slate-500 mt-6 max-w-3xl mx-auto leading-relaxed">
+          <p className="lg:text-xl text-slate-500 mt-6 max-w-3xl mx-auto leading-relaxed text-base">
             Certified Virginia Electronic Notaries serving all 50 states and International clients.<br />
             Remote Online Notarizations available 7 days a week.
           </p>
