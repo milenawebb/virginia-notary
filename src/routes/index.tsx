@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Virginia Notary — Professional Remote Online Notary" },
       {
         property: "og:description",
-        content: "Certified Electronic Notary serving all 50 states and international clients.",
+        content: "Certified Electronic Notary serving all 50 states and International clients.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: globalNetwork },
