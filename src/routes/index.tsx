@@ -363,11 +363,8 @@ function LandingPage() {
           <div className="text-center mb-16">
             <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Our Services</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              How can I help you?
+              How can we help you?
             </h2>
-            <p className="text-lg text-slate-500 mt-4 max-w-3xl mx-auto">
-              Comprehensive notary services for every type of document, all delivered remotely with the highest professional standards.
-            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
