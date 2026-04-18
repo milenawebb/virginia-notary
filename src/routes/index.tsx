@@ -139,6 +139,18 @@ function LandingPage() {
   const [submitting, setSubmitting] = useState(false);
   const [service, setService] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrolled = window.scrollY;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setShowScrollTop(max > 0 && scrolled / max > 0.85);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const selectService = (kind: "ron" | "mobile") => {
     setService(kind === "ron" ? "Remote Online Notarization (RON)" : "Mobile Notary");
