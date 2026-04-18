@@ -407,7 +407,7 @@ function LandingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {RON_FEES.map((fee) => (
               <div
                 key={fee.tier}
