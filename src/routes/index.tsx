@@ -88,13 +88,12 @@ const REASONS = [
 ];
 
 const RON_FEES = [
-  { tier: "1 seal", price: "$60" },
-  { tier: "2 seals", price: "$120" },
+  { tier: "1 seal", price: "$60", highlight: true },
+  { tier: "2 seals", price: "$120", highlight: true },
   { tier: "3–5 seals", price: "$180" },
   { tier: "6–10 seals", price: "$220" },
-  { tier: "11–15 seals", price: "$280" },
-  { tier: "RE Purchase File", price: "$340", highlight: true },
-  { tier: "RE Refinance File", price: "$300", highlight: true },
+  { tier: "RE Purchase File", price: "$340" },
+  { tier: "RE Refinance File", price: "$300" },
 ];
 
 const RON_FEE_INCLUSIONS = [
