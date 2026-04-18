@@ -265,10 +265,10 @@ function LandingPage() {
           <div className="grid sm:grid-cols-3 gap-8">
             {STEPS.map((s) => (
               <div key={s.n} className="text-left">
-                <div className="w-12 h-12 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center mb-5">
-                  <s.icon className="h-5 w-5 text-rose-300" />
+                <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-5">
+                  <s.icon className="h-5 w-5 text-white" />
                 </div>
-                <span className="text-xs font-bold text-rose-300 uppercase tracking-widest">Step {s.n}</span>
+                <span className="text-xs font-bold text-white/80 uppercase tracking-widest">Step {s.n}</span>
                 <h3 className="text-lg font-bold mt-2 mb-2">{s.title}</h3>
                 <p className="text-sm text-slate-400 leading-relaxed">{s.desc}</p>
               </div>
