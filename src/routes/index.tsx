@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Virginia Notary — Professional Remote Online Notary" },
       {
         property: "og:description",
-        content: "Certified Electronic Notary serving all 50 states and international clients.",
+        content: "Certified Electronic Notary serving all 50 states and International clients.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: globalNetwork },
@@ -180,7 +180,7 @@ function LandingPage() {
           </h1>
 
           <p className="text-lg lg:text-xl text-slate-500 mt-6 max-w-3xl mx-auto leading-relaxed">
-            Certified Electronic Notary serving all 50 states and international clients.
+            Certified Electronic Notary serving all 50 states and International clients.<br />
             Remote Online Notarizations available 7 days a week.
           </p>
 
