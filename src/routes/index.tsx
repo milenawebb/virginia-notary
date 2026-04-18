@@ -10,7 +10,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Toaster, toast } from "sonner";
-import heroImage from "@/assets/hero-notary.jpg";
 import milena from "@/assets/milena.jpg";
 import logo from "@/assets/virginia-notary-logo.png";
 
@@ -207,15 +206,61 @@ function LandingPage() {
             ))}
           </div>
 
-          <div className="mt-16 max-w-5xl mx-auto">
-            <div className="bg-white rounded-3xl p-2 shadow-2xl shadow-slate-300/40 border border-slate-100">
-              <img
-                src={heroImage}
-                alt="Virginia Notary online electronic notarization session"
-                className="rounded-2xl w-full"
-                width={1280}
-                height={896}
-              />
+          <div className="mt-20 max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center text-left">
+              <div className="relative">
+                <div className="rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 border border-slate-100">
+                  <img
+                    src={milena}
+                    alt="Milena Webb, Electronic Notary Public"
+                    width={768}
+                    height={960}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -right-4 lg:-right-6 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 max-w-[260px] border border-slate-100">
+                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shrink-0">
+                    <Award className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-slate-900 text-sm">Certified & Bonded</p>
+                    <p className="text-xs text-slate-500">Years of experience</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Meet your notary</p>
+                <p className="text-lg text-slate-700 leading-relaxed">
+                  I am <span className="font-semibold text-slate-900">Milena Webb</span>, a certified, bonded, insured, and experienced
+                  Electronic Notary Public serving clients across Virginia and all 50 states.
+                </p>
+                <p className="mt-4 text-slate-600 leading-relaxed">
+                  With years of experience in remote online notarizations, I provide secure,
+                  reliable, and professional notary services using one of the most trusted
+                  platforms in the US.
+                </p>
+
+                <div className="mt-8 rounded-2xl bg-white p-6 border border-slate-100 shadow-sm">
+                  <p className="text-pink-700 text-xs font-semibold tracking-wider uppercase mb-4">
+                    Commission Information
+                  </p>
+                  <dl className="space-y-2.5">
+                    {[
+                      ["Name", "Milena Webb"],
+                      ["Title", "Electronic Notary Public"],
+                      ["Jurisdiction", "Commonwealth of Virginia"],
+                      ["Registration #", "7873500"],
+                      ["Commission Expires", "Jan 31, 2028"],
+                    ].map(([k, v]) => (
+                      <div key={k} className="flex justify-between gap-4 text-sm">
+                        <dt className="text-slate-500">{k}</dt>
+                        <dd className={`font-medium ${k === "Registration #" ? "text-pink-700 font-semibold" : "text-slate-900"}`}>{v}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -328,87 +373,27 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* About */}
+      {/* Why hire me */}
       <section id="about" className="py-24 lg:py-32 px-6 bg-white border-y border-slate-100 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">About</p>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Why Choose Me</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Meet your notary
+              Why hire me?
             </h2>
           </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 border border-slate-100">
-                <img
-                  src={milena}
-                  alt="Milena Webb, Electronic Notary Public"
-                  width={768}
-                  height={960}
-                  loading="lazy"
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-4 lg:-right-6 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 max-w-[260px] border border-slate-100">
-                <div className="h-10 w-10 rounded-full bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shrink-0">
-                  <Award className="h-5 w-5 text-white" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-5xl mx-auto">
+            {REASONS.map((r) => (
+              <div
+                key={r}
+                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-50 border border-slate-100"
+              >
+                <div className="h-7 w-7 rounded-full bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shrink-0">
+                  <Check className="h-4 w-4 text-white" strokeWidth={3} />
                 </div>
-                <div>
-                  <p className="font-semibold text-slate-900 text-sm">Certified & Bonded</p>
-                  <p className="text-xs text-slate-500">Years of experience</p>
-                </div>
+                <span className="text-sm font-medium text-slate-700">{r}</span>
               </div>
-            </div>
-
-            <div>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                I am <span className="font-semibold text-slate-900">Milena Webb</span>, a certified, bonded, insured, and experienced
-                Electronic Notary Public serving clients across Virginia and all 50 states.
-              </p>
-              <p className="mt-4 text-slate-600 leading-relaxed">
-                With years of experience in remote online notarizations, I provide secure,
-                reliable, and professional notary services using one of the most trusted
-                platforms in the US.
-              </p>
-
-              <div className="mt-8 rounded-2xl bg-slate-50 p-6 border border-slate-100">
-                <p className="text-pink-700 text-xs font-semibold tracking-wider uppercase mb-4">
-                  Commission Information
-                </p>
-                <dl className="space-y-2.5">
-                  {[
-                    ["Name", "Milena Webb"],
-                    ["Title", "Electronic Notary Public"],
-                    ["Jurisdiction", "Commonwealth of Virginia"],
-                    ["Registration #", "7873500"],
-                    ["Commission Expires", "Jan 31, 2028"],
-                  ].map(([k, v]) => (
-                    <div key={k} className="flex justify-between gap-4 text-sm">
-                      <dt className="text-slate-500">{k}</dt>
-                      <dd className={`font-medium ${k === "Registration #" ? "text-pink-700 font-semibold" : "text-slate-900"}`}>{v}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-20">
-            <h3 className="text-2xl font-bold text-slate-900 text-center mb-8">Why hire me?</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-5xl mx-auto">
-              {REASONS.map((r) => (
-                <div
-                  key={r}
-                  className="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-50 border border-slate-100"
-                >
-                  <div className="h-7 w-7 rounded-full bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shrink-0">
-                    <Check className="h-4 w-4 text-white" strokeWidth={3} />
-                  </div>
-                  <span className="text-sm font-medium text-slate-700">{r}</span>
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
       </section>
