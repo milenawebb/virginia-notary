@@ -761,7 +761,7 @@ function LandingPage() {
 
           <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
             <a
-              href="https://opensked.com/provider/login"
+              href="https://opensked.com/login"
               target="_blank"
               rel="noopener noreferrer"
               className="group block p-8 rounded-3xl bg-white/5 backdrop-blur border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1"
@@ -779,7 +779,7 @@ function LandingPage() {
             </a>
 
             <a
-              href="https://opensked.com/provider/signup"
+              href="https://opensked.com/login"
               target="_blank"
               rel="noopener noreferrer"
               className="group block p-8 rounded-3xl bg-gradient-to-br from-rose-600 to-pink-700 hover:from-rose-500 hover:to-pink-600 transition-all hover:-translate-y-1 shadow-2xl shadow-pink-900/40"
