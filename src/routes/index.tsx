@@ -251,31 +251,6 @@ function LandingPage() {
                   Virginia was one of the first states in the nation to enact comprehensive Remote Online Notarization legislation, making it a leader in digital notarization services. Documents notarized by our Virginia-commissioned notaries carry full legal authority and are widely accepted by courts, financial institutions, government agencies, and international bodies worldwide.
                 </p>
 
-                <h3 className="mt-8 text-xl font-bold text-slate-900">What We Do</h3>
-                <p className="mt-3 text-slate-600 leading-relaxed">
-                  Whether you need a real estate closing completed remotely, a business contract notarized for international use, medical documents authenticated, or family paperwork handled with care — our team is here for you. We specialize in:
-                </p>
-                <ul className="mt-4 space-y-2.5">
-                  {[
-                    "Remote Online Notarizations (RON) via secure video platform",
-                    "Mobile Notary services throughout Charlottesville and Central Virginia",
-                    "International document notarization for clients worldwide",
-                    "Emergency and same-day appointments available 7 days a week",
-                  ].map((item) => (
-                    <li key={item} className="flex gap-3 text-slate-700">
-                      <CheckCircle2 className="h-5 w-5 text-rose-800 shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <h3 className="mt-8 text-xl font-bold text-slate-900">Our Commitment</h3>
-                <p className="mt-3 text-slate-600 leading-relaxed">
-                  We believe geography should never be a barrier to getting important documents notarized. Our team combines deep legal expertise with cutting-edge technology to deliver a seamless, professional experience — whether you are signing from your living room in Richmond or a hotel room in Paris.
-                </p>
-                <p className="mt-3 text-slate-600 leading-relaxed">
-                  Every notarization we perform meets the highest standards of security, compliance, and professionalism. Your documents are in trusted hands.
-                </p>
               </div>
             </div>
           </div>
