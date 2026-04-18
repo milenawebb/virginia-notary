@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  Shield, MapPin, Calendar, Zap, ArrowRight, Check, CheckCircle2, Phone, Mail, Clock, Award,
+  Shield, MapPin, Calendar, Zap, ArrowRight, ArrowUp, Check, CheckCircle2, Phone, Mail, Clock, Award,
   Home as HomeIcon, Briefcase, HeartPulse, Users, Car, FileText,
   CalendarCheck, ShieldCheck, Video, Globe2, Stamp, Sparkles, CalendarClock,
   UserPlus, LogIn, Menu, X,
@@ -139,6 +139,18 @@ function LandingPage() {
   const [submitting, setSubmitting] = useState(false);
   const [service, setService] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrolled = window.scrollY;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setShowScrollTop(max > 0 && scrolled / max > 0.85);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const selectService = (kind: "ron" | "mobile") => {
     setService(kind === "ron" ? "Remote Online Notarization (RON)" : "Mobile Notary");
@@ -814,6 +826,17 @@ function LandingPage() {
           </div>
         </div>
       </footer>
+
+      <button
+        type="button"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        aria-label="Back to top"
+        className={`fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 ${
+          showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+        }`}
+      >
+        <ArrowUp className="h-5 w-5" />
+      </button>
 
       <Toaster />
     </div>
