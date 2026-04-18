@@ -87,6 +87,28 @@ const REASONS = [
   "7 days a week availability",
 ];
 
+const RON_FEES = [
+  { tier: "1 seal", price: "$60" },
+  { tier: "2 seals", price: "$120" },
+  { tier: "3–5 seals", price: "$180" },
+  { tier: "6–10 seals", price: "$220" },
+  { tier: "11–15 seals", price: "$280" },
+  { tier: "RE Purchase File", price: "$340", highlight: true },
+  { tier: "RE Refinance File", price: "$300", highlight: true },
+];
+
+const RON_FEE_INCLUSIONS = [
+  "Up to 2 signers",
+  "ID proofing included",
+  "Includes signatures that do not need notarization",
+];
+
+const RON_FEE_NOTES = [
+  "$30 upcharge for each additional signer",
+  "$20 upcharge for each additional 30 minutes after the 1st hour",
+  "$30 flat fee for international signing (signors are outside the US)",
+];
+
 const FAQS = [
   { q: "What is Remote Online Notarization?", a: "RON allows you to have documents notarized via live video call, without needing to meet in person. It's legal, secure, and accepted in all 50 states." },
   { q: "What do I need for a RON session?", a: "A computer or smartphone with camera and microphone, a valid government-issued photo ID, and an internet connection." },
