@@ -127,6 +127,7 @@ const CONTACT_ITEMS = [
 
 const NAV_LINKS = [
   { href: "#services", label: "Services" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#how", label: "How It Works" },
   { href: "#about", label: "About" },
   { href: "#faq", label: "FAQ" },
