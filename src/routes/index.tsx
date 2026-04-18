@@ -285,6 +285,10 @@ function LandingPage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Services */}
       <section id="services" className="py-24 lg:py-32 px-6 bg-white border-y border-slate-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
