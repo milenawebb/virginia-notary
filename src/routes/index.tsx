@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  Shield, MapPin, Calendar, Zap, ArrowRight, Check, Phone, Mail, Clock, Award,
+  Shield, MapPin, Calendar, Zap, ArrowRight, Check, CheckCircle2, Phone, Mail, Clock, Award,
   Home as HomeIcon, Briefcase, HeartPulse, Users, Car, FileText,
   CalendarCheck, ShieldCheck, Video, Globe2, Stamp, Sparkles, CalendarClock,
 } from "lucide-react";
