@@ -233,19 +233,19 @@ function LandingPage() {
           </div>
 
           <div className="mt-20 max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start text-left">
-              <div className="relative lg:sticky lg:top-24">
-                <div className="rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 border border-slate-100">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center text-left">
+              <div className="relative">
+                <div className="rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 border border-slate-100 aspect-[4/5]">
                   <img
                     src={globalNetwork}
-                    alt="Global notary network connecting clients worldwide"
-                    width={768}
-                    height={960}
+                    alt="Modern remote notary workspace with laptop"
+                    width={800}
+                    height={1000}
                     loading="lazy"
-                    className="w-full h-auto"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-6 -right-4 lg:-right-6 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 max-w-[280px] border border-slate-100">
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 border border-slate-100 whitespace-nowrap">
                   <div className="h-10 w-10 rounded-full bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center shrink-0">
                     <Award className="h-5 w-5 text-white" />
                   </div>
