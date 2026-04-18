@@ -148,7 +148,7 @@ function LandingPage() {
               (540) 603-0359
             </a>
             <a href="#book">
-              <Button className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-6 shadow-lg shadow-pink-600/25 text-sm font-medium">
+              <Button className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-rose-700 hover:to-pink-800 text-white rounded-full px-6 shadow-lg shadow-pink-600/25 text-sm font-medium">
                 Book Now
               </Button>
             </a>
@@ -183,7 +183,7 @@ function LandingPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
             <a href="#book">
-              <Button size="lg" className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-pink-600/30 w-full sm:w-auto">
+              <Button size="lg" className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-rose-700 hover:to-pink-800 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-pink-600/30 w-full sm:w-auto">
                 Book Now
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
@@ -505,7 +505,7 @@ function LandingPage() {
                   type="submit"
                   size="lg"
                   disabled={submitting}
-                  className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-8 shadow-lg shadow-pink-600/30 font-semibold"
+                  className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-rose-700 hover:to-pink-800 text-white rounded-full px-8 shadow-lg shadow-pink-600/30 font-semibold"
                 >
                   {submitting ? "Submitting..." : "Request Appointment"}
                 </Button>
