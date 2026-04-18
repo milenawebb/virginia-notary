@@ -12,6 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Toaster, toast } from "sonner";
 import heroImage from "@/assets/hero-notary.jpg";
 import milena from "@/assets/milena.jpg";
+import logo from "@/assets/virginia-notary-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -130,13 +131,8 @@ function LandingPage() {
       {/* Nav */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-4">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shadow-lg shadow-pink-600/25">
-              <Stamp className="h-4 w-4 text-white" />
-            </div>
-            <span className="text-xl font-bold tracking-tight">
-              Virginia<span className="bg-gradient-to-r from-rose-600 to-pink-700 bg-clip-text text-transparent"> Notary</span>
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Virginia Notary — RON & Mobile Services" className="h-10 w-auto" />
           </Link>
           <div className="hidden md:flex gap-8 text-sm text-slate-500">
             {NAV_LINKS.map((l) => (
@@ -591,10 +587,7 @@ function LandingPage() {
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center">
-              <Stamp className="h-3.5 w-3.5 text-white" />
-            </div>
-            <span className="font-bold text-white">Virginia Notary</span>
+            <img src={logo} alt="Virginia Notary" className="h-8 w-auto brightness-0 invert opacity-90" />
           </div>
           <p className="text-center md:text-left">
             © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
