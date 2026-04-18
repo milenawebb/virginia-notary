@@ -170,10 +170,7 @@ function LandingPage() {
         </div>
 
         <div className="relative max-w-7xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-1.5 text-xs text-slate-600 mb-8 shadow-sm">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            Certified Electronic Notary Public
-          </div>
+
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.08] max-w-5xl mx-auto tracking-tight">
             Professional Notary Services{" "}
