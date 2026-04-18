@@ -183,6 +183,19 @@ function LandingPage() {
             ))}
           </div>
 
+          {/* Centered hamburger for tablet (md to lg) */}
+          <div className="hidden md:flex lg:hidden flex-1 justify-center">
+            <button
+              type="button"
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuOpen}
+              onClick={() => setMobileMenuOpen((v) => !v)}
+              className="inline-flex items-center justify-center h-10 w-10 rounded-full text-slate-700 hover:bg-slate-100 transition-colors"
+            >
+              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </button>
+          </div>
+
           {/* Right side actions */}
           <div className="flex gap-2 sm:gap-3 items-center shrink-0">
             <a
@@ -198,13 +211,13 @@ function LandingPage() {
               </Button>
             </a>
 
-            {/* Hamburger (visible below lg) */}
+            {/* Hamburger for mobile only (below md) */}
             <button
               type="button"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
               onClick={() => setMobileMenuOpen((v) => !v)}
-              className="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-full text-slate-700 hover:bg-slate-100 transition-colors"
+              className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full text-slate-700 hover:bg-slate-100 transition-colors"
             >
               {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
