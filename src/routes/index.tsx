@@ -44,10 +44,10 @@ const HERO_BADGES = [
 ];
 
 const SERVICES = [
-  { icon: HomeIcon, title: "Real Estate Documents", desc: "Seller closings, buyer closings, refinance, and mortgage documents.", color: "from-blue-500 to-blue-600" },
-  { icon: Briefcase, title: "Business Documents", desc: "Contracts, corporate documents, employment and financial documents.", color: "from-violet-500 to-violet-600" },
-  { icon: HeartPulse, title: "Medical Documents", desc: "Healthcare directives, medical powers of attorney, HIPAA forms.", color: "from-fuchsia-500 to-fuchsia-600" },
-  { icon: Users, title: "Family Documents", desc: "Adoption, divorce, wills, domestic partnership, estate documents.", color: "from-cyan-500 to-cyan-600" },
+  { icon: HomeIcon, title: "Real Estate Documents", desc: "Seller closings, buyer closings, refinance, and mortgage documents.", color: "from-rose-500 to-rose-600" },
+  { icon: Briefcase, title: "Business Documents", desc: "Contracts, corporate documents, employment and financial documents.", color: "from-pink-600 to-pink-700" },
+  { icon: HeartPulse, title: "Medical Documents", desc: "Healthcare directives, medical powers of attorney, HIPAA forms.", color: "from-fuchsia-600 to-pink-700" },
+  { icon: Users, title: "Family Documents", desc: "Adoption, divorce, wills, domestic partnership, estate documents.", color: "from-rose-400 to-rose-500" },
   { icon: Car, title: "Motor Vehicle Documents", desc: "DMV documents, title transfers, traffic school exams.", color: "from-emerald-500 to-emerald-600" },
   { icon: FileText, title: "Additional Services", desc: "Acknowledgments, jurats, oaths, passport documents, jail documents.", color: "from-amber-500 to-amber-600" },
 ];
@@ -131,11 +131,11 @@ function LandingPage() {
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-4">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center shadow-lg shadow-violet-500/20">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shadow-lg shadow-pink-600/25">
               <Stamp className="h-4 w-4 text-white" />
             </div>
             <span className="text-xl font-bold tracking-tight">
-              Virginia<span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent"> Notary</span>
+              Virginia<span className="bg-gradient-to-r from-rose-600 to-pink-700 bg-clip-text text-transparent"> Notary</span>
             </span>
           </Link>
           <div className="hidden md:flex gap-8 text-sm text-slate-500">
@@ -152,7 +152,7 @@ function LandingPage() {
               (540) 603-0359
             </a>
             <a href="#book">
-              <Button className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-6 shadow-lg shadow-violet-500/20 text-sm font-medium">
+              <Button className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-6 shadow-lg shadow-pink-600/25 text-sm font-medium">
                 Book Now
               </Button>
             </a>
@@ -163,8 +163,8 @@ function LandingPage() {
       {/* Hero */}
       <section className="relative pt-20 pb-24 lg:pt-28 lg:pb-32 px-6">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-gradient-to-br from-blue-200/40 to-violet-200/40 rounded-full blur-3xl" />
-          <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-gradient-to-br from-fuchsia-200/30 to-cyan-200/30 rounded-full blur-3xl" />
+          <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-gradient-to-br from-rose-200/40 to-pink-200/40 rounded-full blur-3xl" />
+          <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-gradient-to-br from-pink-200/30 to-rose-200/30 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto text-center">
@@ -175,7 +175,7 @@ function LandingPage() {
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.08] max-w-5xl mx-auto tracking-tight">
             Professional Notary Services{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-violet-600 to-fuchsia-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-rose-600 via-pink-700 to-fuchsia-700 bg-clip-text text-transparent">
               from the comfort of your home
             </span>
           </h1>
@@ -187,7 +187,7 @@ function LandingPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
             <a href="#book">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-violet-500/25 w-full sm:w-auto">
+              <Button size="lg" className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-pink-600/30 w-full sm:w-auto">
                 Book Now
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
@@ -205,7 +205,7 @@ function LandingPage() {
                 key={b.label}
                 className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white border border-slate-100 shadow-sm text-slate-700 text-sm"
               >
-                <b.icon className="h-4 w-4 text-violet-600 shrink-0" />
+                <b.icon className="h-4 w-4 text-pink-700 shrink-0" />
                 <span className="font-medium">{b.label}</span>
               </div>
             ))}
@@ -229,7 +229,7 @@ function LandingPage() {
       <section id="services" className="py-24 lg:py-32 px-6 bg-white border-y border-slate-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-violet-600 uppercase tracking-wider mb-3">Our Services</p>
+            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Our Services</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               How can I help you?
             </h2>
@@ -244,7 +244,7 @@ function LandingPage() {
                 key={s.title}
                 className="group bg-slate-50/50 rounded-2xl p-7 border border-slate-100 hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
-                <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${s.color} flex items-center justify-center mb-5 shadow-lg shadow-blue-500/10 group-hover:scale-110 transition-transform`}>
+                <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${s.color} flex items-center justify-center mb-5 shadow-lg shadow-pink-500/10 group-hover:scale-110 transition-transform`}>
                   <s.icon className="h-5 w-5 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">{s.title}</h3>
@@ -256,9 +256,9 @@ function LandingPage() {
       </section>
 
       {/* How it works */}
-      <section id="how" className="py-24 lg:py-32 px-6 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 text-white scroll-mt-20">
+      <section id="how" className="py-24 lg:py-32 px-6 bg-gradient-to-br from-slate-950 via-rose-950 to-slate-950 text-white scroll-mt-20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-sm font-semibold text-blue-300 uppercase tracking-wider mb-3">Simple Process</p>
+          <p className="text-sm font-semibold text-rose-300 uppercase tracking-wider mb-3">Simple Process</p>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 tracking-tight">
             Notarize in 3 simple steps
           </h2>
@@ -269,10 +269,10 @@ function LandingPage() {
           <div className="grid sm:grid-cols-3 gap-8">
             {STEPS.map((s) => (
               <div key={s.n} className="text-left">
-                <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-5">
-                  <s.icon className="h-5 w-5 text-blue-300" />
+                <div className="w-12 h-12 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center mb-5">
+                  <s.icon className="h-5 w-5 text-rose-300" />
                 </div>
-                <span className="text-xs font-bold text-blue-300 uppercase tracking-widest">Step {s.n}</span>
+                <span className="text-xs font-bold text-rose-300 uppercase tracking-widest">Step {s.n}</span>
                 <h3 className="text-lg font-bold mt-2 mb-2">{s.title}</h3>
                 <p className="text-sm text-slate-400 leading-relaxed">{s.desc}</p>
               </div>
@@ -285,15 +285,15 @@ function LandingPage() {
       <section className="py-24 lg:py-32 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-violet-600 uppercase tracking-wider mb-3">Choose Your Service</p>
+            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Choose Your Service</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Two ways to get notarized
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="relative rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-blue-600 to-violet-600 text-white shadow-2xl shadow-violet-500/30">
-              <span className="absolute -top-3 left-8 bg-white text-violet-600 text-xs font-bold px-3 py-1 rounded-full shadow">
+            <div className="relative rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-rose-600 to-pink-700 text-white shadow-2xl shadow-pink-600/40">
+              <span className="absolute -top-3 left-8 bg-white text-pink-700 text-xs font-bold px-3 py-1 rounded-full shadow">
                 Recommended
               </span>
               <div className="flex items-center gap-3 mb-6">
@@ -336,7 +336,7 @@ function LandingPage() {
       <section id="about" className="py-24 lg:py-32 px-6 bg-white border-y border-slate-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-violet-600 uppercase tracking-wider mb-3">About</p>
+            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">About</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Meet your notary
             </h2>
@@ -355,7 +355,7 @@ function LandingPage() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-4 lg:-right-6 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 max-w-[260px] border border-slate-100">
-                <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center shrink-0">
+                <div className="h-10 w-10 rounded-full bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shrink-0">
                   <Award className="h-5 w-5 text-white" />
                 </div>
                 <div>
@@ -377,7 +377,7 @@ function LandingPage() {
               </p>
 
               <div className="mt-8 rounded-2xl bg-slate-50 p-6 border border-slate-100">
-                <p className="text-violet-600 text-xs font-semibold tracking-wider uppercase mb-4">
+                <p className="text-pink-700 text-xs font-semibold tracking-wider uppercase mb-4">
                   Commission Information
                 </p>
                 <dl className="space-y-2.5">
@@ -390,7 +390,7 @@ function LandingPage() {
                   ].map(([k, v]) => (
                     <div key={k} className="flex justify-between gap-4 text-sm">
                       <dt className="text-slate-500">{k}</dt>
-                      <dd className={`font-medium ${k === "Registration #" ? "text-violet-600 font-semibold" : "text-slate-900"}`}>{v}</dd>
+                      <dd className={`font-medium ${k === "Registration #" ? "text-pink-700 font-semibold" : "text-slate-900"}`}>{v}</dd>
                     </div>
                   ))}
                 </dl>
@@ -406,7 +406,7 @@ function LandingPage() {
                   key={r}
                   className="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-50 border border-slate-100"
                 >
-                  <div className="h-7 w-7 rounded-full bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center shrink-0">
+                  <div className="h-7 w-7 rounded-full bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center shrink-0">
                     <Check className="h-4 w-4 text-white" strokeWidth={3} />
                   </div>
                   <span className="text-sm font-medium text-slate-700">{r}</span>
@@ -421,7 +421,7 @@ function LandingPage() {
       <section id="book" className="py-24 lg:py-32 px-6 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-violet-600 uppercase tracking-wider mb-3">Book Online</p>
+            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Book Online</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Ready to get started?
             </h2>
@@ -432,7 +432,7 @@ function LandingPage() {
 
           <div className="relative">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 text-white text-xs font-semibold shadow-lg shadow-violet-500/30">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-600 to-pink-700 text-white text-xs font-semibold shadow-lg shadow-pink-600/40">
                 <Sparkles className="h-3.5 w-3.5" />
                 OpenSked™ Booking — Coming Soon
               </div>
@@ -461,7 +461,7 @@ function LandingPage() {
                     id="docType"
                     name="docType"
                     required
-                    className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
+                    className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-600"
                   >
                     <option value="">Select document type</option>
                     <option>Real Estate</option>
@@ -482,7 +482,7 @@ function LandingPage() {
                     id="service"
                     name="service"
                     required
-                    className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
+                    className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-600"
                   >
                     <option value="">Select service</option>
                     <option>Remote Online Notarization (RON)</option>
@@ -502,14 +502,14 @@ function LandingPage() {
 
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-100">
                 <p className="text-xs text-slate-500 flex items-center gap-2">
-                  <CalendarClock className="h-4 w-4 text-violet-600" />
+                  <CalendarClock className="h-4 w-4 text-pink-700" />
                   Most appointments confirmed within 1 business hour.
                 </p>
                 <Button
                   type="submit"
                   size="lg"
                   disabled={submitting}
-                  className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-8 shadow-lg shadow-violet-500/25 font-semibold"
+                  className="bg-gradient-to-r from-rose-600 to-pink-700 hover:from-blue-700 hover:to-violet-700 text-white rounded-full px-8 shadow-lg shadow-pink-600/30 font-semibold"
                 >
                   {submitting ? "Submitting..." : "Request Appointment"}
                 </Button>
@@ -523,7 +523,7 @@ function LandingPage() {
       <section id="faq" className="py-24 lg:py-32 px-6 bg-white border-t border-slate-100 scroll-mt-20">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-violet-600 uppercase tracking-wider mb-3">FAQ</p>
+            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">FAQ</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Frequently asked questions
             </h2>
@@ -536,7 +536,7 @@ function LandingPage() {
               >
                 <summary className="cursor-pointer list-none flex items-center justify-between font-semibold text-slate-900">
                   {item.q}
-                  <span className="ml-4 text-violet-600 group-open:rotate-45 transition-transform text-2xl leading-none">+</span>
+                  <span className="ml-4 text-pink-700 group-open:rotate-45 transition-transform text-2xl leading-none">+</span>
                 </summary>
                 <p className="mt-4 text-sm text-slate-600 leading-relaxed">{item.a}</p>
               </details>
@@ -549,7 +549,7 @@ function LandingPage() {
       <section id="contact" className="py-24 lg:py-32 px-6 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-sm font-semibold text-violet-600 uppercase tracking-wider mb-3">Get In Touch</p>
+            <p className="text-sm font-semibold text-pink-700 uppercase tracking-wider mb-3">Get In Touch</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Contact information
             </h2>
@@ -559,7 +559,7 @@ function LandingPage() {
             {CONTACT_ITEMS.map((it) => {
               const content = (
                 <>
-                  <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center mb-4 shadow-lg shadow-violet-500/20">
+                  <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center mb-4 shadow-lg shadow-pink-600/25">
                     <it.icon className="h-5 w-5 text-white" />
                   </div>
                   <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">{it.label}</p>
@@ -591,14 +591,14 @@ function LandingPage() {
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center">
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-rose-600 to-pink-700 flex items-center justify-center">
               <Stamp className="h-3.5 w-3.5 text-white" />
             </div>
             <span className="font-bold text-white">Virginia Notary</span>
           </div>
           <p className="text-center md:text-left">
             © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent font-semibold">OpenSked™</span>
+            <span className="bg-gradient-to-r from-rose-400 to-pink-500 bg-clip-text text-transparent font-semibold">OpenSked™</span>
           </p>
           <div className="flex items-center gap-5">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
