@@ -146,19 +146,21 @@ function LandingPage() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    const onMessage = (e: MessageEvent) => {
-      if (e.origin !== "https://opensked.com") return;
-      const data = e.data as { type?: string; height?: number } | null;
-      if (data && data.type === "resize" && typeof data.height === "number") {
-        const iframe = document.getElementById("opensked-booking") as HTMLIFrameElement | null;
+useEffect(() => {
+    const handler = (e: MessageEvent) => {
+      if (e.data?.type === 'opensked-resize') {
+        const iframe = document.getElementById(
+          'opensked-frame'
+        ) as HTMLIFrameElement | null;
         if (iframe) {
-          iframe.style.height = data.height + "px";
+          iframe.style.height = e.data.height + 'px';
         }
       }
     };
-    window.addEventListener("message", onMessage);
-    return () => window.removeEventListener("message", onMessage);
+    window.addEventListener('message', handler);
+    return () => window.removeEventListener(
+      'message', handler
+    );
   }, []);
 
   const selectService = (kind: "ron" | "mobile") => {
@@ -580,16 +582,18 @@ function LandingPage() {
       {/* Booking form */}
       <section id="book" className="py-24 lg:py-32 px-6 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
-          <iframe
-            id="opensked-booking"
+<iframe
+            id="opensked-frame"
             src="https://opensked.com/book/virginia-notary"
             width="100%"
-            height="1400"
+            frameBorder="0"
             scrolling="no"
             style={{
               border: "none",
               borderRadius: "12px",
               display: "block",
+              minHeight: "600px",
+              width: "100%",
             }}
           />
         </div>
