@@ -552,8 +552,8 @@ function LandingPage() {
 
           <div className="grid sm:grid-cols-3 gap-8">
             {STEPS.map((s) => (
-              <div key={s.n} className="text-left">
-                <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-5">
+              <div key={s.n} className="text-center sm:text-left">
+                <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-5 mx-auto sm:mx-0">
                   <s.icon className="h-5 w-5 text-white" />
                 </div>
                 <span className="text-xs font-bold text-white/80 uppercase tracking-widest">Step {s.n}</span>
@@ -631,7 +631,7 @@ function LandingPage() {
             {CONTACT_ITEMS.map((it) => {
               const content = (
                 <>
-                  <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center mb-4 shadow-lg shadow-rose-900/25">
+                  <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center mb-4 shadow-lg shadow-rose-900/25 mx-auto sm:mx-0">
                     <it.icon className="h-5 w-5 text-white" />
                   </div>
                   <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">{it.label}</p>
@@ -642,14 +642,14 @@ function LandingPage() {
                 <a
                   key={it.label}
                   href={it.href}
-                  className="block p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all"
+                  className="block p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all text-center sm:text-left"
                 >
                   {content}
                 </a>
               ) : (
                 <div
                   key={it.label}
-                  className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm"
+                  className="p-6 rounded-2xl bg-white border border-slate-100 shadow-sm text-center sm:text-left"
                 >
                   {content}
                 </div>
