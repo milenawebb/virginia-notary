@@ -304,7 +304,7 @@ function LandingPage() {
             ))}
           </div>
 
-          <div className="mt-20 max-w-6xl mx-auto">
+          <div id="about" className="mt-20 max-w-6xl mx-auto scroll-mt-20">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center text-left">
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 border border-slate-100 aspect-[4/5]">
@@ -349,7 +349,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <div id="about" className="mt-20 max-w-6xl mx-auto scroll-mt-20">
+          <div id="why-us" className="mt-20 max-w-6xl mx-auto scroll-mt-20">
             <div className="text-center mb-10">
               <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Why Choose Us</p>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
