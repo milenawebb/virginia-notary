@@ -584,13 +584,12 @@ function LandingPage() {
             id="opensked-booking"
             src="https://opensked.com/book/virginia-notary"
             width="100%"
-            frameBorder="0"
+            height="850"
             scrolling="no"
             style={{
               border: "none",
               borderRadius: "12px",
-              minHeight: "600px",
-              width: "100%",
+              display: "block",
             }}
           />
         </div>
