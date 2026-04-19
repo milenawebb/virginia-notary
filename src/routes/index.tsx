@@ -7,6 +7,7 @@ import {
   UserPlus, LogIn, Menu, X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { QuoteFormModal } from "@/components/QuoteFormModal";
 import globalNetwork from "@/assets/global-network.jpg";
 import logo from "@/assets/virginia-notary-logo.png";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
@@ -134,6 +135,7 @@ const NAV_LINKS = [
 function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [quoteOpen, setQuoteOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -285,11 +287,15 @@ function LandingPage() {
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
             </Link>
-            <a href="#contact">
-              <Button size="lg" variant="outline" className="rounded-full px-10 py-6 text-base font-semibold border-slate-200 bg-white shadow-sm w-full sm:w-auto">
-                Get a Free Quote
-              </Button>
-            </a>
+            <Button
+              type="button"
+              size="lg"
+              variant="outline"
+              onClick={() => setQuoteOpen(true)}
+              className="rounded-full px-10 py-6 text-base font-semibold border-slate-200 bg-white shadow-sm w-full sm:w-auto"
+            >
+              Get a Free Quote
+            </Button>
           </div>
 
           <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-3xl mx-auto">
@@ -745,7 +751,7 @@ function LandingPage() {
         <ArrowUp className="h-5 w-5" />
       </button>
 
-      
+      <QuoteFormModal open={quoteOpen} onOpenChange={setQuoteOpen} />
     </div>
   );
 }
