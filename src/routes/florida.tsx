@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  ArrowRight, CheckCircle2, Check, Sparkles, CalendarCheck, ShieldCheck, Video, FileText,
+  ArrowRight, ArrowUp, CheckCircle2, Check, Sparkles, CalendarCheck, ShieldCheck, Video, FileText,
   Home as HomeIcon, Briefcase, Banknote, FileSignature, KeyRound, ScrollText, RefreshCw, Wallet,
   ShieldCheck as ShieldIcon, Clock, Building2, Phone, Mail,
 } from "lucide-react";
@@ -137,6 +137,26 @@ const FAQS = [
 
 function FloridaPage() {
   const [quoteOpen, setQuoteOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const services = document.getElementById("services");
+      if (!services) {
+        setShowScrollTop(false);
+        return;
+      }
+      const triggerY = services.getBoundingClientRect().top + window.scrollY;
+      setShowScrollTop(window.scrollY >= triggerY - 100);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden">
@@ -433,6 +453,17 @@ function FloridaPage() {
           </div>
         </div>
       </footer>
+
+      <button
+        type="button"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        aria-label="Back to top"
+        className={`fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white shadow-lg shadow-rose-900/30 flex items-center justify-center transition-all duration-300 hover:scale-110 ${
+          showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+        }`}
+      >
+        <ArrowUp className="h-5 w-5" />
+      </button>
 
       <QuoteFormModal open={quoteOpen} onOpenChange={setQuoteOpen} />
     </div>
