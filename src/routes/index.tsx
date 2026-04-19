@@ -15,21 +15,24 @@ import logoDark from "@/assets/virginia-notary-logo-dark.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Virginia Notary — Remote Online Notary Services in Virginia" },
+      { title: "Virginia Notary — RON & Mobile Notary Services" },
       {
         name: "description",
         content:
-          "Certified Electronic Notary serving all 50 states. Remote Online Notarizations 7 days a week. Book your appointment with Milena Webb today.",
+          "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week.",
       },
-      { property: "og:title", content: "Virginia Notary — Professional Remote Online Notary" },
+      { property: "og:title", content: "Virginia Notary — RON & Mobile Notary Services" },
       {
         property: "og:description",
-        content: "Certified Electronic Notary serving all 50 states and International clients.",
+        content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week.",
       },
+      { property: "og:url", content: "https://virginia-notary.com" },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: globalNetwork },
+      { property: "og:image", content: "https://virginia-notary.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: globalNetwork },
+      { name: "twitter:title", content: "Virginia Notary — RON & Mobile Notary Services" },
+      { name: "twitter:description", content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week." },
+      { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
   }),
   component: LandingPage,
