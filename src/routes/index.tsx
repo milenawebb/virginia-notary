@@ -713,7 +713,7 @@ function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
-          <img src={logoDark} alt="Virginia Notary" className="h-10 w-auto shrink-0" />
+          <img src={logoDark} alt="Virginia Notary" className="h-11 w-auto shrink-0" />
           <p className="text-center order-last lg:order-none lg:text-left">
             © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
             <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold">OpenSked™</span>
