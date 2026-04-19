@@ -54,15 +54,6 @@ export const Route = createFileRoute("/florida")({
   component: FloridaPage,
 });
 
-const NAV_LINKS = [
-  { label: "Services" },
-  { label: "Pricing" },
-  { label: "How It Works" },
-  { label: "About" },
-  { label: "FAQ" },
-  { label: "Contact" },
-  { label: "Join Our Team" },
-];
 
 const WHY_CARDS = [
   {
