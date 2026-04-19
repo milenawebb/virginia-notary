@@ -136,8 +136,6 @@ const NAV_LINKS = [
 ];
 
 function LandingPage() {
-  const [submitting, setSubmitting] = useState(false);
-  const [service, setService] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -153,20 +151,8 @@ function LandingPage() {
   }, []);
 
   const selectService = (kind: "ron" | "mobile") => {
-    setService(kind === "ron" ? "Remote Online Notarization (RON)" : "Mobile Notary");
     document.getElementById("book")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitting(true);
-    setTimeout(() => {
-      toast.success("Request received!", {
-        description: "I'll reach out shortly to confirm your appointment.",
-      });
-      (e.target as HTMLFormElement).reset();
-      setSubmitting(false);
-    }, 700);
+    void kind;
   };
 
   return (
