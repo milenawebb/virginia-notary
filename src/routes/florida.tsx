@@ -378,23 +378,6 @@ function FloridaPage() {
             </a>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <Link to="/book">
-              <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30 w-full sm:w-auto">
-                Book Your Closing
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </Button>
-            </Link>
-            <Button
-              type="button"
-              size="lg"
-              variant="outline"
-              onClick={() => setQuoteOpen(true)}
-              className="rounded-full px-10 py-6 text-base font-semibold border-slate-200 bg-white text-slate-900 hover:bg-slate-50 w-full sm:w-auto"
-            >
-              Get a Free Quote
-            </Button>
-          </div>
         </div>
       </section>
 
