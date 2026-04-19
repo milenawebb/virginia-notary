@@ -265,7 +265,7 @@ function FloridaPage() {
       <section className="py-24 lg:py-32 px-6 bg-white border-t border-slate-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Why Florida</p>
+            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Why Virginia</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Why Florida Clients Choose Virginia Notary
             </h2>
