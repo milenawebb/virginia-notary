@@ -73,7 +73,7 @@ export function QuoteFormModal({ open, onOpenChange }: QuoteFormModalProps) {
               <CheckCircle2 className="h-7 w-7 text-green-600" />
             </div>
             <p className="text-base font-semibold text-slate-900">
-              Thank you! We'll be in touch within 1 business day.
+              Thank you! We'll be in touch within 2 hours during business hours.
             </p>
             <Button
               type="button"
