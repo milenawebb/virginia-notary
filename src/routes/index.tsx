@@ -704,7 +704,7 @@ function LandingPage() {
             </a>
 
             <a
-              href="https://opensked.com/login"
+              href="https://opensked.com/join/virginia-notary"
               target="_blank"
               rel="noopener noreferrer"
               className="group block p-8 rounded-3xl bg-gradient-to-br from-rose-600 to-pink-700 hover:from-rose-500 hover:to-pink-600 transition-all hover:-translate-y-1 shadow-2xl shadow-pink-900/40"
