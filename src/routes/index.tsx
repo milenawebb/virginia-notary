@@ -147,10 +147,6 @@ function LandingPage() {
   }, []);
 
 
-  const selectService = (kind: "ron" | "mobile") => {
-    document.getElementById("book")?.scrollIntoView({ behavior: "smooth" });
-    void kind;
-  };
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden">
@@ -200,11 +196,11 @@ function LandingPage() {
               <Phone className="h-4 w-4" />
               (540) 603-0359
             </a>
-            <a href="#book" className="hidden sm:block">
+            <Link to="/book" className="hidden sm:block">
               <Button className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-5 sm:px-6 shadow-lg shadow-rose-900/25 text-sm font-medium">
                 Book Now
               </Button>
-            </a>
+            </Link>
 
             {/* Hamburger for mobile only (below md) */}
             <button
@@ -241,11 +237,11 @@ function LandingPage() {
                   <Phone className="h-4 w-4" />
                   (540) 603-0359
                 </a>
-                <a href="#book" onClick={() => setMobileMenuOpen(false)}>
+                <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
                   <Button className="w-full bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full shadow-lg shadow-rose-900/25 text-sm font-medium">
                     Book Now
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -275,12 +271,12 @@ function LandingPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <a href="#book">
+            <Link to="/book">
               <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30 w-full sm:w-auto">
                 Book Now
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
-            </a>
+            </Link>
             <a href="#contact">
               <Button size="lg" variant="outline" className="rounded-full px-10 py-6 text-base font-semibold border-slate-200 bg-white shadow-sm w-full sm:w-auto">
                 Get a Free Quote
@@ -377,9 +373,8 @@ function LandingPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <a
-                href="#book?service=ron"
-                onClick={(e) => { e.preventDefault(); selectService("ron"); }}
+              <Link
+                to="/book"
                 className="relative block text-left rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-rose-800 to-pink-900 text-white shadow-2xl shadow-pink-900/40 hover:-translate-y-1 hover:shadow-pink-900/50 transition-all"
               >
                 <span className="absolute -top-3 left-8 bg-white text-rose-800 text-xs font-bold px-3 py-1 rounded-full shadow">
@@ -402,11 +397,10 @@ function LandingPage() {
                 <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold">
                   Book RON <ArrowRight className="h-4 w-4" />
                 </span>
-              </a>
+              </Link>
 
-              <a
-                href="#book?service=mobile"
-                onClick={(e) => { e.preventDefault(); selectService("mobile"); }}
+              <Link
+                to="/book"
                 className="relative block text-left rounded-3xl p-8 lg:p-10 bg-white border border-slate-100 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all"
               >
                 <div className="flex items-center gap-3 mb-6">
@@ -426,7 +420,7 @@ function LandingPage() {
                 <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-rose-800">
                   Book Mobile <ArrowRight className="h-4 w-4" />
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -527,12 +521,12 @@ function LandingPage() {
           </div>
 
           <div className="text-center mt-10">
-            <a href="#book">
+            <Link to="/book">
               <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30">
                 Book Your Notarization
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
