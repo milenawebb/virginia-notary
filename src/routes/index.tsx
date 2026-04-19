@@ -146,22 +146,6 @@ function LandingPage() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-useEffect(() => {
-    const handler = (e: MessageEvent) => {
-      if (e.data?.type === 'opensked-resize') {
-        const iframe = document.getElementById(
-          'opensked-frame'
-        ) as HTMLIFrameElement | null;
-        if (iframe) {
-          iframe.style.height = e.data.height + 'px';
-        }
-      }
-    };
-    window.addEventListener('message', handler);
-    return () => window.removeEventListener(
-      'message', handler
-    );
-  }, []);
 
   const selectService = (kind: "ron" | "mobile") => {
     document.getElementById("book")?.scrollIntoView({ behavior: "smooth" });
