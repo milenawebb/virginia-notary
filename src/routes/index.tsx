@@ -7,10 +7,6 @@ import {
   UserPlus, LogIn, Menu, X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Toaster, toast } from "sonner";
 import globalNetwork from "@/assets/global-network.jpg";
 import logo from "@/assets/virginia-notary-logo.png";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
