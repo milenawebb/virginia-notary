@@ -35,7 +35,7 @@ export function LegalPage({
             <img
               src={logo}
               alt="Virginia Notary — RON & Mobile services"
-              className="h-9 sm:h-10 w-auto"
+              className="h-14 sm:h-16 w-auto"
             />
           </Link>
 

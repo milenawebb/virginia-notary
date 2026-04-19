@@ -167,7 +167,7 @@ function LandingPage() {
             <img
               src={logo}
               alt="Virginia Notary — RON & Mobile Services"
-              className="h-10 sm:h-11 w-auto"
+              className="h-14 sm:h-16 w-auto"
             />
           </Link>
 
