@@ -566,12 +566,17 @@ function LandingPage() {
       <section id="book" className="py-24 lg:py-32 px-6 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <iframe
+            id="opensked-booking"
             src="https://opensked.com/book/virginia-notary"
             width="100%"
-            height="2400"
             frameBorder="0"
             scrolling="no"
-            style={{ border: "none", borderRadius: "12px", overflow: "hidden" }}
+            style={{
+              border: "none",
+              borderRadius: "12px",
+              minHeight: "600px",
+              width: "100%",
+            }}
           />
         </div>
       </section>
