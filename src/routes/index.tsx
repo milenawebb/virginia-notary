@@ -739,7 +739,7 @@ function LandingPage() {
         <ArrowUp className="h-5 w-5" />
       </button>
 
-      <Toaster />
+      
     </div>
   );
 }
