@@ -703,10 +703,8 @@ function LandingPage() {
               </span>
             </a>
 
-            <a
-              href="https://opensked.com/join/virginia-notary"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/join"
               className="group block p-8 rounded-3xl bg-gradient-to-br from-rose-600 to-pink-700 hover:from-rose-500 hover:to-pink-600 transition-all hover:-translate-y-1 shadow-2xl shadow-pink-900/40"
             >
               <div className="h-12 w-12 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center mb-5">
@@ -719,7 +717,7 @@ function LandingPage() {
               <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white">
                 Apply to Join <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
