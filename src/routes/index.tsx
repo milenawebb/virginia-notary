@@ -86,7 +86,7 @@ const REASONS = [
 
 const RON_FEES = [
   { tier: "1 seal", price: "$60", highlight: true },
-  { tier: "2 seals", price: "$120", highlight: true },
+  { tier: "2 seals", price: "$120" },
   { tier: "3–5 seals", price: "$180" },
   { tier: "6–10 seals", price: "$220" },
   { tier: "RE Purchase File", price: "$340" },
