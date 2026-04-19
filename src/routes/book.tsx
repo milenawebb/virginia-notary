@@ -44,18 +44,12 @@ function BookPage() {
       {/* Nav — matches homepage */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-3 lg:py-4">
-          <Link to="/" className="flex flex-col items-start shrink-0 leading-none">
+          <Link to="/" className="flex items-center shrink-0">
             <img
               src={logo}
               alt="Virginia Notary — RON & Mobile Services"
               className="h-9 sm:h-10 w-auto"
             />
-            <span className="mt-1 text-[10px] sm:text-xs text-slate-500">
-              Powered by{" "}
-              <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold">
-                OpenSked™
-              </span>
-            </span>
           </Link>
 
           <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-slate-500">
