@@ -241,11 +241,11 @@ function LandingPage() {
                   <Phone className="h-4 w-4" />
                   (540) 603-0359
                 </a>
-                <a href="#book" onClick={() => setMobileMenuOpen(false)}>
+                <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
                   <Button className="w-full bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full shadow-lg shadow-rose-900/25 text-sm font-medium">
                     Book Now
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -275,12 +275,12 @@ function LandingPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <a href="#book">
+            <Link to="/book">
               <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30 w-full sm:w-auto">
                 Book Now
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
-            </a>
+            </Link>
             <a href="#contact">
               <Button size="lg" variant="outline" className="rounded-full px-10 py-6 text-base font-semibold border-slate-200 bg-white shadow-sm w-full sm:w-auto">
                 Get a Free Quote
@@ -527,12 +527,12 @@ function LandingPage() {
           </div>
 
           <div className="text-center mt-10">
-            <a href="#book">
+            <Link to="/book">
               <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30">
                 Book Your Notarization
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
