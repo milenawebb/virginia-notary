@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  ArrowRight, Phone, Menu, X, CheckCircle2, CalendarCheck, ShieldCheck, Video, FileText,
+  ArrowRight, Phone, Menu, X, CheckCircle2, Check, Sparkles, CalendarCheck, ShieldCheck, Video, FileText,
   Home as HomeIcon, Briefcase, Banknote, FileSignature, KeyRound, ScrollText, RefreshCw, Wallet,
   ShieldCheck as ShieldIcon, Clock, Building2,
 } from "lucide-react";
@@ -98,6 +98,27 @@ const DOCUMENTS = [
   { icon: ScrollText, title: "Powers of Attorney" },
   { icon: Briefcase, title: "Loan Modifications" },
   { icon: Banknote, title: "HELOCs" },
+];
+
+const RON_FEES = [
+  { tier: "1 seal", price: "$60", highlight: true },
+  { tier: "2 seals", price: "$120" },
+  { tier: "3–5 seals", price: "$180" },
+  { tier: "6–10 seals", price: "$220" },
+  { tier: "RE Purchase File", price: "$340" },
+  { tier: "RE Refinance File", price: "$300" },
+];
+
+const RON_FEE_INCLUSIONS = [
+  "Up to 2 signers",
+  "ID proofing included",
+  "Includes signatures that do not need notarization",
+];
+
+const RON_FEE_NOTES = [
+  "$30 upcharge for each additional signer",
+  "$20 upcharge for each additional 30 minutes after the 1st hour",
+  "$30 flat fee for international signing (signors are outside the US)",
 ];
 
 const FAQS = [
