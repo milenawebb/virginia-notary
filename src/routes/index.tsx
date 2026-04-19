@@ -7,10 +7,6 @@ import {
   UserPlus, LogIn, Menu, X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Toaster, toast } from "sonner";
 import globalNetwork from "@/assets/global-network.jpg";
 import logo from "@/assets/virginia-notary-logo.png";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
@@ -136,8 +132,6 @@ const NAV_LINKS = [
 ];
 
 function LandingPage() {
-  const [submitting, setSubmitting] = useState(false);
-  const [service, setService] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -153,20 +147,8 @@ function LandingPage() {
   }, []);
 
   const selectService = (kind: "ron" | "mobile") => {
-    setService(kind === "ron" ? "Remote Online Notarization (RON)" : "Mobile Notary");
     document.getElementById("book")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitting(true);
-    setTimeout(() => {
-      toast.success("Request received!", {
-        description: "I'll reach out shortly to confirm your appointment.",
-      });
-      (e.target as HTMLFormElement).reset();
-      setSubmitting(false);
-    }, 700);
+    void kind;
   };
 
   return (
@@ -757,7 +739,7 @@ function LandingPage() {
         <ArrowUp className="h-5 w-5" />
       </button>
 
-      <Toaster />
+      
     </div>
   );
 }
