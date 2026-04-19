@@ -9,7 +9,7 @@ const NAV_LINKS: { href: string; label: string }[] = [
   { href: "/florida#services", label: "Services" },
   { href: "/florida#pricing", label: "Pricing" },
   { href: "/florida#faq", label: "FAQ" },
-  { href: "https://virginia-notary.com/#contact", label: "Contact" },
+  { href: "/florida#contact", label: "Contact" },
 ];
 
 export function FloridaHeader() {

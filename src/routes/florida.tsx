@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight, CheckCircle2, Check, Sparkles, CalendarCheck, ShieldCheck, Video, FileText,
   Home as HomeIcon, Briefcase, Banknote, FileSignature, KeyRound, ScrollText, RefreshCw, Wallet,
-  ShieldCheck as ShieldIcon, Clock, Building2,
+  ShieldCheck as ShieldIcon, Clock, Building2, Phone, Mail,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { QuoteFormModal } from "@/components/QuoteFormModal";
@@ -340,7 +340,64 @@ function FloridaPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Contact */}
+      <section id="contact" className="py-24 lg:py-32 px-6 bg-white border-t border-slate-100">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Contact</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Get In Touch
+          </h2>
+          <p className="text-base lg:text-lg text-slate-500 mt-5 max-w-2xl mx-auto leading-relaxed">
+            Have questions about your Florida real estate closing? Reach out and we'll get back to you the same day.
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-4 mt-10 text-left">
+            <a
+              href="tel:+15406030359"
+              className="flex items-center gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-rose-200 hover:shadow-md transition-all"
+            >
+              <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center shadow-md shadow-rose-900/25 shrink-0">
+                <Phone className="h-5 w-5 text-white" />
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Call us</p>
+                <p className="text-base font-semibold text-slate-900">(540) 603-0359</p>
+              </div>
+            </a>
+            <a
+              href="mailto:notary@virginia-notary.com"
+              className="flex items-center gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-rose-200 hover:shadow-md transition-all"
+            >
+              <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center shadow-md shadow-rose-900/25 shrink-0">
+                <Mail className="h-5 w-5 text-white" />
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Email us</p>
+                <p className="text-base font-semibold text-slate-900 break-all">notary@virginia-notary.com</p>
+              </div>
+            </a>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+            <Link to="/book">
+              <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30 w-full sm:w-auto">
+                Book Your Closing
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </Button>
+            </Link>
+            <Button
+              type="button"
+              size="lg"
+              variant="outline"
+              onClick={() => setQuoteOpen(true)}
+              className="rounded-full px-10 py-6 text-base font-semibold border-slate-200 bg-white text-slate-900 hover:bg-slate-50 w-full sm:w-auto"
+            >
+              Get a Free Quote
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 lg:py-32 px-6 bg-gradient-to-br from-rose-950 via-pink-950 to-slate-950 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
           <div className="absolute top-1/4 left-1/4 h-72 w-72 rounded-full bg-rose-500 blur-3xl" />
