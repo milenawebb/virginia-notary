@@ -377,9 +377,8 @@ function LandingPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <a
-                href="#book?service=ron"
-                onClick={(e) => { e.preventDefault(); selectService("ron"); }}
+              <Link
+                to="/book"
                 className="relative block text-left rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-rose-800 to-pink-900 text-white shadow-2xl shadow-pink-900/40 hover:-translate-y-1 hover:shadow-pink-900/50 transition-all"
               >
                 <span className="absolute -top-3 left-8 bg-white text-rose-800 text-xs font-bold px-3 py-1 rounded-full shadow">
@@ -402,11 +401,10 @@ function LandingPage() {
                 <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold">
                   Book RON <ArrowRight className="h-4 w-4" />
                 </span>
-              </a>
+              </Link>
 
-              <a
-                href="#book?service=mobile"
-                onClick={(e) => { e.preventDefault(); selectService("mobile"); }}
+              <Link
+                to="/book"
                 className="relative block text-left rounded-3xl p-8 lg:p-10 bg-white border border-slate-100 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all"
               >
                 <div className="flex items-center gap-3 mb-6">
@@ -426,7 +424,7 @@ function LandingPage() {
                 <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-rose-800">
                   Book Mobile <ArrowRight className="h-4 w-4" />
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
