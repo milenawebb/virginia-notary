@@ -568,9 +568,10 @@ function LandingPage() {
           <iframe
             src="https://opensked.com/book/virginia-notary"
             width="100%"
-            height="900"
+            height="2400"
             frameBorder="0"
-            style={{ border: "none", borderRadius: "12px" }}
+            scrolling="no"
+            style={{ border: "none", borderRadius: "12px", overflow: "hidden" }}
           />
         </div>
       </section>
