@@ -579,23 +579,29 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* Booking form */}
+      {/* Booking CTA */}
       <section id="book" className="py-24 lg:py-32 px-6 scroll-mt-20">
-        <div className="max-w-4xl mx-auto">
-<iframe
-            id="opensked-frame"
-            src="https://opensked.com/book/virginia-notary"
-            width="100%"
-            frameBorder="0"
-            scrolling="no"
-            style={{
-              border: "none",
-              borderRadius: "12px",
-              display: "block",
-              minHeight: "600px",
-              width: "100%",
-            }}
-          />
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">
+            Book Online
+          </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+            Ready to Get Started?
+          </h2>
+          <p className="text-base lg:text-lg text-slate-500 mt-5 max-w-2xl mx-auto leading-relaxed">
+            Schedule your Remote Online Notarization in minutes. Available 7 days a week, including evenings and holidays.
+          </p>
+          <div className="mt-10">
+            <Link to="/book">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-12 py-7 text-lg font-semibold shadow-xl shadow-rose-900/30"
+              >
+                Book Your Appointment
+                <ArrowRight className="ml-1 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
