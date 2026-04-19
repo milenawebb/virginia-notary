@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as JoinRouteImport } from './routes/join'
+import { Route as FloridaRouteImport } from './routes/florida'
 import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
 import { Route as BookRouteImport } from './routes/book'
 import { Route as IndexRouteImport } from './routes/index'
@@ -29,6 +30,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const JoinRoute = JoinRouteImport.update({
   id: '/join',
   path: '/join',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FloridaRoute = FloridaRouteImport.update({
+  id: '/florida',
+  path: '/florida',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CookiePolicyRoute = CookiePolicyRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/book': typeof BookRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/florida': typeof FloridaRoute
   '/join': typeof JoinRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/book': typeof BookRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/florida': typeof FloridaRoute
   '/join': typeof JoinRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
@@ -68,20 +76,36 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/book': typeof BookRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/florida': typeof FloridaRoute
   '/join': typeof JoinRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/book' | '/cookie-policy' | '/join' | '/privacy' | '/terms'
+  fullPaths:
+    | '/'
+    | '/book'
+    | '/cookie-policy'
+    | '/florida'
+    | '/join'
+    | '/privacy'
+    | '/terms'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/book' | '/cookie-policy' | '/join' | '/privacy' | '/terms'
+  to:
+    | '/'
+    | '/book'
+    | '/cookie-policy'
+    | '/florida'
+    | '/join'
+    | '/privacy'
+    | '/terms'
   id:
     | '__root__'
     | '/'
     | '/book'
     | '/cookie-policy'
+    | '/florida'
     | '/join'
     | '/privacy'
     | '/terms'
@@ -91,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BookRoute: typeof BookRoute
   CookiePolicyRoute: typeof CookiePolicyRoute
+  FloridaRoute: typeof FloridaRoute
   JoinRoute: typeof JoinRoute
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
@@ -117,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/join'
       fullPath: '/join'
       preLoaderRoute: typeof JoinRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/florida': {
+      id: '/florida'
+      path: '/florida'
+      fullPath: '/florida'
+      preLoaderRoute: typeof FloridaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cookie-policy': {
@@ -147,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BookRoute: BookRoute,
   CookiePolicyRoute: CookiePolicyRoute,
+  FloridaRoute: FloridaRoute,
   JoinRoute: JoinRoute,
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
@@ -154,3 +187,12 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { createStart } from '@tanstack/react-start'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+  }
+}
