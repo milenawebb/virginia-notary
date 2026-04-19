@@ -593,94 +593,13 @@ function LandingPage() {
             </p>
           </div>
 
-          <div className="relative">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-800 to-pink-900 text-white text-xs font-semibold shadow-lg shadow-rose-900/40">
-                <Sparkles className="h-3.5 w-3.5" />
-                OpenSked™ Booking — Coming Soon
-              </div>
-            </div>
-
-            <form
-              onSubmit={onSubmit}
-              className="bg-white rounded-3xl shadow-2xl shadow-slate-300/30 border border-slate-100 p-6 sm:p-10"
-            >
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-slate-700 font-medium">Full Name</Label>
-                  <Input id="name" name="name" required placeholder="Jane Smith" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-slate-700 font-medium">Email</Label>
-                  <Input id="email" name="email" type="email" required placeholder="you@example.com" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-slate-700 font-medium">Phone</Label>
-                  <Input id="phone" name="phone" type="tel" required placeholder="(540) 555-0000" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="docType" className="text-slate-700 font-medium">Document Type</Label>
-                  <select
-                    id="docType"
-                    name="docType"
-                    required
-                    className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-800"
-                  >
-                    <option value="">Select document type</option>
-                    <option>Real Estate</option>
-                    <option>Business</option>
-                    <option>Medical</option>
-                    <option>Family / Estate</option>
-                    <option>Motor Vehicle</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="date" className="text-slate-700 font-medium">Preferred Date</Label>
-                  <Input id="date" name="date" type="date" required />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="service" className="text-slate-700 font-medium">Service Type</Label>
-                  <select
-                    id="service"
-                    name="service"
-                    required
-                    value={service}
-                    onChange={(e) => setService(e.target.value)}
-                    className="flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-800"
-                  >
-                    <option value="">Select service</option>
-                    <option>Remote Online Notarization (RON)</option>
-                    <option>Mobile Notary</option>
-                  </select>
-                </div>
-                <div className="sm:col-span-2 space-y-2">
-                  <Label htmlFor="message" className="text-slate-700 font-medium">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    placeholder="Tell me about your documents or any special requests..."
-                  />
-                </div>
-              </div>
-
-              <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-100">
-                <p className="text-xs text-slate-500 flex items-center gap-2">
-                  <CalendarClock className="h-4 w-4 text-rose-800" />
-                  Most appointments confirmed within 1 business hour.
-                </p>
-                <Button
-                  type="submit"
-                  size="lg"
-                  disabled={submitting}
-                  className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-8 shadow-lg shadow-rose-900/30 font-semibold"
-                >
-                  {submitting ? "Submitting..." : "Request Appointment"}
-                </Button>
-              </div>
-            </form>
-          </div>
+          <iframe
+            src="https://opensked.com/book/virginia-notary?embed=1"
+            width="100%"
+            height="900"
+            frameBorder="0"
+            style={{ border: "none", borderRadius: "12px" }}
+          />
         </div>
       </section>
 
