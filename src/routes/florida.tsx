@@ -55,13 +55,13 @@ export const Route = createFileRoute("/florida")({
 });
 
 const NAV_LINKS = [
-  { href: "https://virginia-notary.com/#services", label: "Services" },
-  { href: "https://virginia-notary.com/#pricing", label: "Pricing" },
-  { href: "https://virginia-notary.com/#how-it-works", label: "How It Works" },
-  { href: "https://virginia-notary.com/#about", label: "About" },
-  { href: "https://virginia-notary.com/#faq", label: "FAQ" },
-  { href: "https://virginia-notary.com/#contact", label: "Contact" },
-  { href: "https://virginia-notary.com/#careers", label: "Join Our Team" },
+  { label: "Services" },
+  { label: "Pricing" },
+  { label: "How It Works" },
+  { label: "About" },
+  { label: "FAQ" },
+  { label: "Contact" },
+  { label: "Join Our Team" },
 ];
 
 const WHY_CARDS = [
@@ -159,9 +159,9 @@ function FloridaPage() {
 
           <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-slate-500">
             {NAV_LINKS.map((l) => (
-              <a key={l.href} href={l.href} className="hover:text-slate-900 transition-colors whitespace-nowrap">
+              <span key={l.label} className="whitespace-nowrap cursor-default">
                 {l.label}
-              </a>
+              </span>
             ))}
           </div>
 
@@ -207,14 +207,12 @@ function FloridaPage() {
           <div className="lg:hidden border-t border-slate-100 bg-white/95 backdrop-blur-xl">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex flex-col items-center gap-0.5">
               {NAV_LINKS.map((l) => (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="w-full text-center px-3 py-1.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors"
+                <span
+                  key={l.label}
+                  className="w-full text-center px-3 py-1.5 rounded-lg text-sm font-medium text-slate-700"
                 >
                   {l.label}
-                </a>
+                </span>
               ))}
               <div className="w-full mt-2 pt-2 border-t border-slate-100 flex flex-col items-center gap-2">
                 <a href="tel:+15406030359" className="flex items-center gap-2 px-3 py-1 text-sm text-slate-600 hover:text-slate-900">
