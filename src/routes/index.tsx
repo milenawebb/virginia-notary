@@ -137,13 +137,21 @@ function LandingPage() {
 
   useEffect(() => {
     const onScroll = () => {
-      const scrolled = window.scrollY;
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      setShowScrollTop(max > 0 && scrolled / max > 0.85);
+      const services = document.getElementById("services");
+      if (!services) {
+        setShowScrollTop(false);
+        return;
+      }
+      const triggerY = services.getBoundingClientRect().top + window.scrollY;
+      setShowScrollTop(window.scrollY >= triggerY - 100);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
   }, []);
 
 
