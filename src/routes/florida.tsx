@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  ArrowRight, Phone, Menu, X, CheckCircle2, Check, Sparkles, CalendarCheck, ShieldCheck, Video, FileText,
+  ArrowRight, CheckCircle2, Check, Sparkles, CalendarCheck, ShieldCheck, Video, FileText,
   Home as HomeIcon, Briefcase, Banknote, FileSignature, KeyRound, ScrollText, RefreshCw, Wallet,
   ShieldCheck as ShieldIcon, Clock, Building2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { QuoteFormModal } from "@/components/QuoteFormModal";
-import logo from "@/assets/virginia-notary-logo.png";
+import { FloridaHeader } from "@/components/FloridaHeader";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
 
 const PAGE_TITLE = "Virginia Notary for Florida Real Estate Closings | RON Notary Services";
