@@ -128,11 +128,11 @@ const CONTACT_ITEMS = [
 const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#pricing", label: "Pricing" },
-  { href: "#how", label: "How It Works" },
+  { href: "#how-it-works", label: "How It Works" },
   { href: "#about", label: "About" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
-  { href: "#join-team", label: "Join Our Team" },
+  { href: "#careers", label: "Join Our Team" },
 ];
 
 function LandingPage() {
@@ -549,7 +549,7 @@ function LandingPage() {
       </section>
 
       {/* How it works */}
-      <section id="how" className="py-24 lg:py-32 px-6 bg-gradient-to-br from-slate-950 via-rose-950 to-slate-950 text-white scroll-mt-20">
+      <section id="how-it-works" className="py-24 lg:py-32 px-6 bg-gradient-to-br from-slate-950 via-rose-950 to-slate-950 text-white scroll-mt-20">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-sm font-semibold text-rose-300 uppercase tracking-wider mb-3">Simple Online Process</p>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 tracking-tight">
@@ -669,7 +669,7 @@ function LandingPage() {
       </section>
 
       {/* Join our Team */}
-      <section id="join-team" className="py-24 lg:py-32 px-6 bg-gradient-to-br from-rose-950 via-pink-950 to-slate-950 scroll-mt-20 relative overflow-hidden">
+      <section id="careers" className="py-24 lg:py-32 px-6 bg-gradient-to-br from-rose-950 via-pink-950 to-slate-950 scroll-mt-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
           <div className="absolute top-1/4 left-1/4 h-72 w-72 rounded-full bg-rose-500 blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-pink-500 blur-3xl" />
