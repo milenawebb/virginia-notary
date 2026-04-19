@@ -135,7 +135,7 @@ function BookPage() {
       </nav>
 
       {/* Page content */}
-      <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="flex-1 flex flex-col max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Link
           to="/"
           className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-900 transition-colors"
@@ -144,21 +144,14 @@ function BookPage() {
           Back to Home
         </Link>
 
-        <div className="mt-6">
+        <div className="mt-6 flex-1 flex flex-col">
           <iframe
             title="Book your Virginia Notary appointment"
             src="https://opensked.com/book/virginia-notary"
-            width="100%"
-            height="700"
             frameBorder={0}
             scrolling="yes"
-            style={{
-              border: "none",
-              display: "block",
-              width: "100%",
-              height: "calc(100vh - 200px)",
-              minHeight: "700px",
-            }}
+            className="flex-1 w-full border-0 block"
+            style={{ minHeight: "700px" }}
           />
         </div>
       </main>
