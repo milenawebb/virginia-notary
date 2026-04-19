@@ -332,6 +332,81 @@ function FloridaPage() {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section className="py-24 lg:py-32 px-6 bg-slate-50 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Pricing</p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Simple, Transparent Pricing for Florida Real Estate Closings
+            </h2>
+            <p className="text-lg text-slate-500 mt-4 max-w-3xl mx-auto">
+              Flat-rate pricing with no hidden fees. What you see is what you pay.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            {RON_FEES.map((fee) => (
+              <div
+                key={fee.tier}
+                className={`rounded-2xl p-5 border text-center transition-all duration-300 hover:-translate-y-1 ${
+                  fee.highlight
+                    ? "bg-gradient-to-br from-rose-800 to-pink-900 border-transparent text-white shadow-xl shadow-rose-900/30"
+                    : "bg-white border-slate-100 hover:shadow-lg"
+                }`}
+              >
+                <h3 className={`text-sm font-bold mb-2 ${fee.highlight ? "text-white" : "text-slate-900"}`}>
+                  {fee.tier}
+                </h3>
+                <p className={`text-3xl font-extrabold tracking-tight ${fee.highlight ? "text-white" : "text-slate-900"}`}>
+                  {fee.price}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-2xl p-6 border border-slate-100">
+              <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-4 flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-rose-800" />
+                Every package includes
+              </h3>
+              <ul className="space-y-2">
+                {RON_FEE_INCLUSIONS.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
+                    <Check className="h-4 w-4 text-rose-800 mt-0.5 flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl p-6 border border-slate-100">
+              <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-4 flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-rose-800" />
+                Additional fees
+              </h3>
+              <ul className="space-y-2">
+                {RON_FEE_NOTES.map((note) => (
+                  <li key={note} className="flex items-start gap-2 text-sm text-slate-600">
+                    <span className="text-rose-800 mt-0.5">*</span>
+                    <span>{note}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/book">
+              <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30">
+                Book Your Closing
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-24 lg:py-32 px-6">
         <div className="max-w-3xl mx-auto">
