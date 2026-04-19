@@ -156,32 +156,7 @@ function BookPage() {
         </div>
       </main>
 
-      {/* Footer — matches homepage */}
-      <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
-          <img src={logoDark} alt="Virginia Notary" className="h-10 w-auto shrink-0" />
-          <p className="text-center order-last lg:order-none lg:text-left">
-            © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
-            <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold">
-              OpenSked™
-            </span>
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 shrink-0">
-            <Link to="/privacy" className="hover:text-white transition-colors whitespace-nowrap">
-              Privacy
-            </Link>
-            <Link to="/terms" className="hover:text-white transition-colors whitespace-nowrap">
-              Terms
-            </Link>
-            <Link
-              to="/cookie-policy"
-              className="hover:text-white transition-colors whitespace-nowrap"
-            >
-              Cookie Policy
-            </Link>
-          </div>
-        </div>
-      </footer>
+      {/* Footer removed per request */}
     </div>
   );
 }
