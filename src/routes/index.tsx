@@ -734,6 +734,7 @@ function LandingPage() {
             <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold">OpenSked™</span>
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 shrink-0">
+            <Link to="/florida" className="hover:text-white transition-colors whitespace-nowrap">Florida Real Estate Closings</Link>
             <Link to="/privacy" className="hover:text-white transition-colors whitespace-nowrap">Privacy</Link>
             <Link to="/terms" className="hover:text-white transition-colors whitespace-nowrap">Terms</Link>
             <Link to="/cookie-policy" className="hover:text-white transition-colors whitespace-nowrap">Cookie Policy</Link>
