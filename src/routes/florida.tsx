@@ -197,7 +197,7 @@ function FloridaPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-24 lg:py-32 px-6">
+      <section id="how-it-works" className="py-24 lg:py-32 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">How It Works</p>
@@ -221,7 +221,7 @@ function FloridaPage() {
       </section>
 
       {/* Services / Documents */}
-      <section className="py-24 lg:py-32 px-6 bg-white border-t border-slate-100">
+      <section id="services" className="py-24 lg:py-32 px-6 bg-white border-t border-slate-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Services</p>
@@ -243,7 +243,7 @@ function FloridaPage() {
       </section>
 
       {/* Pricing */}
-      <section className="py-24 lg:py-32 px-6 bg-slate-50 border-t border-slate-100">
+      <section id="pricing" className="py-24 lg:py-32 px-6 bg-slate-50 border-t border-slate-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Pricing</p>
@@ -318,7 +318,7 @@ function FloridaPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32 px-6">
+      <section id="faq" className="py-24 lg:py-32 px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">FAQ</p>
