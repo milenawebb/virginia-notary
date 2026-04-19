@@ -427,29 +427,29 @@ function LandingPage() {
       </section>
 
       {/* Services */}
-      <section id="services" className="py-24 lg:py-32 px-6 bg-white border-y border-slate-100 scroll-mt-20">
+      <section id="services" className="py-12 lg:py-16 px-6 bg-white border-y border-slate-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Our Services</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               How can we help you?
             </h2>
-            <p className="text-lg text-slate-500 mt-4 max-w-3xl mx-auto">
+            <p className="text-base text-slate-500 mt-3 max-w-3xl mx-auto">
               Comprehensive notary services for every type of document, all delivered with the highest professional standards.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {SERVICES.map((s) => (
               <div
                 key={s.title}
-                className="group bg-slate-50/50 rounded-2xl p-7 border border-slate-100 hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="group bg-slate-50/50 rounded-xl p-5 border border-slate-100 hover:bg-white hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${s.color} flex items-center justify-center mb-5 shadow-lg shadow-pink-500/10 group-hover:scale-110 transition-transform`}>
-                  <s.icon className="h-5 w-5 text-white" />
+                <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${s.color} flex items-center justify-center mb-3 shadow-lg shadow-pink-500/10 group-hover:scale-105 transition-transform`}>
+                  <s.icon className="h-4 w-4 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">{s.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{s.desc}</p>
+                <h3 className="text-sm font-bold text-slate-900 mb-1.5">{s.title}</h3>
+                <p className="text-xs text-slate-500 leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
