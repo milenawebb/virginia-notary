@@ -565,18 +565,8 @@ function LandingPage() {
       {/* Booking form */}
       <section id="book" className="py-24 lg:py-32 px-6 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Book Online</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Ready to get started?
-            </h2>
-            <p className="text-lg text-slate-500 mt-4 max-w-2xl mx-auto">
-              Book your appointment online in minutes. Same-day and emergency appointments available.
-            </p>
-          </div>
-
           <iframe
-            src="https://opensked.com/book/virginia-notary?embed=1"
+            src="https://opensked.com/book/virginia-notary"
             width="100%"
             height="900"
             frameBorder="0"
