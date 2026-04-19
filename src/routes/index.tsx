@@ -146,6 +146,21 @@ function LandingPage() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const onMessage = (e: MessageEvent) => {
+      if (e.origin !== "https://opensked.com") return;
+      const data = e.data as { type?: string; height?: number } | null;
+      if (data && data.type === "resize" && typeof data.height === "number") {
+        const iframe = document.getElementById("opensked-booking") as HTMLIFrameElement | null;
+        if (iframe) {
+          iframe.style.height = data.height + "px";
+        }
+      }
+    };
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, []);
+
   const selectService = (kind: "ron" | "mobile") => {
     document.getElementById("book")?.scrollIntoView({ behavior: "smooth" });
     void kind;
