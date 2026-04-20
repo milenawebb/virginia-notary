@@ -28,11 +28,11 @@ export const Route = createFileRoute("/join")({
 const NAV_LINKS = [
   { href: "/#services", label: "Services" },
   { href: "/#pricing", label: "Pricing" },
-  { href: "/#how", label: "How It Works" },
+  { href: "/#how-it-works", label: "How It Works" },
   { href: "/#about", label: "About" },
   { href: "/#faq", label: "FAQ" },
   { href: "/#contact", label: "Contact" },
-  { href: "/#join-team", label: "Join Our Team" },
+  { href: "/#careers", label: "Join Our Team" },
 ];
 
 function JoinPage() {
