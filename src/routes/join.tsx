@@ -32,7 +32,7 @@ const NAV_LINKS = [
   { href: "/#about", label: "About" },
   { href: "/#faq", label: "FAQ" },
   { href: "/#contact", label: "Contact" },
-  { href: "/#careers", label: "Join Our Team" },
+  { href: "/#careers", label: "Join Our Network" },
 ];
 
 function JoinPage() {
