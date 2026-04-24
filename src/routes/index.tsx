@@ -132,7 +132,7 @@ const NAV_LINKS = [
   { href: "#about", label: "About" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
-  { href: "#careers", label: "Join Our Team" },
+  { href: "#careers", label: "Join Our Network" },
 ];
 
 function LandingPage() {
@@ -697,7 +697,7 @@ function LandingPage() {
           <div className="text-center mb-12">
             <p className="text-sm font-semibold text-rose-300 uppercase tracking-wider mb-3">Careers</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-              Join our Team
+              Join our Network
             </h2>
             <p className="text-base lg:text-lg text-slate-300 mt-5 max-w-2xl mx-auto leading-relaxed">
               Are you a Notary Public looking to grow your business? Sign in to your OpenSked™ provider account
@@ -746,10 +746,19 @@ function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
-          <img src={logoDark} alt="Virginia Notary" className="h-11 w-auto shrink-0" />
+          <Link to="/" aria-label="Virginia Notary — Home" className="shrink-0">
+            <img src={logoDark} alt="Virginia Notary" className="h-11 w-auto" />
+          </Link>
           <p className="text-center order-last lg:order-none lg:text-left">
             © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
-            <span className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold">OpenSked™</span>
+            <a
+              href="https://opensked.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity"
+            >
+              OpenSked™
+            </a>
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 shrink-0">
             <Link to="/florida" className="hover:text-white transition-colors whitespace-nowrap">Florida Real Estate Closings</Link>
