@@ -434,10 +434,13 @@ function LandingPage() {
                 </span>
               </Link>
 
-              <Link
-                to="/book"
-                className="relative block text-left rounded-3xl p-8 lg:p-10 bg-white border border-slate-100 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all"
+              <div
+                aria-disabled="true"
+                className="relative block text-left rounded-3xl p-8 lg:p-10 bg-white border border-slate-100 shadow-sm opacity-60 cursor-not-allowed select-none"
               >
+                <span className="absolute top-4 right-4 inline-flex items-center rounded-full bg-slate-900 text-white text-xs font-semibold px-3 py-1 shadow">
+                  Coming Soon
+                </span>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="h-11 w-11 rounded-xl bg-slate-100 flex items-center justify-center">
                     <Car className="h-5 w-5 text-slate-700" />
@@ -452,10 +455,10 @@ function LandingPage() {
                     </li>
                   ))}
                 </ul>
-                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-rose-800">
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-400">
                   Book Mobile <ArrowRight className="h-4 w-4" />
                 </span>
-              </Link>
+              </div>
             </div>
           </div>
         </div>
