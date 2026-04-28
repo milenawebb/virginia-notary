@@ -398,7 +398,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="mt-20">
+          <div id="services" className="mt-20 scroll-mt-20">
             <div className="text-center mb-10">
               <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Choose Your Service</p>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
