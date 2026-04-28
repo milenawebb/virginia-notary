@@ -126,13 +126,13 @@ const CONTACT_ITEMS = [
 ];
 
 const NAV_LINKS = [
-  { href: "#services", label: "Services" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#how-it-works", label: "How It Works" },
   { href: "#about", label: "About" },
+  { href: "#services", label: "Services" },
+  { href: "#how-it-works", label: "How It Works" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
   { href: "#careers", label: "Join Our Network" },
+  { href: "#contact", label: "Contact" },
 ];
 
 function LandingPage() {
@@ -398,7 +398,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="mt-20">
+          <div id="services" className="mt-20 scroll-mt-20">
             <div className="text-center mb-10">
               <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Choose Your Service</p>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -465,10 +465,10 @@ function LandingPage() {
       </section>
 
       {/* Services */}
-      <section id="services" className="py-12 lg:py-16 px-6 bg-white border-y border-slate-100 scroll-mt-20">
+      <section id="scope" className="py-12 lg:py-16 px-6 bg-white border-y border-slate-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Our Services</p>
+            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Scope of Services</p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               How can we help you?
             </h2>
@@ -763,11 +763,13 @@ function LandingPage() {
               OpenSked™
             </a>
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 shrink-0">
+          <div className="flex flex-col items-center gap-3 lg:flex-row lg:gap-5 shrink-0">
             <Link to="/florida" className="hover:text-white transition-colors whitespace-nowrap">Florida Real Estate Closings</Link>
-            <Link to="/privacy" className="hover:text-white transition-colors whitespace-nowrap">Privacy</Link>
-            <Link to="/terms" className="hover:text-white transition-colors whitespace-nowrap">Terms</Link>
-            <Link to="/cookie-policy" className="hover:text-white transition-colors whitespace-nowrap">Cookie Policy</Link>
+            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+              <Link to="/privacy" className="hover:text-white transition-colors whitespace-nowrap">Privacy</Link>
+              <Link to="/terms" className="hover:text-white transition-colors whitespace-nowrap">Terms</Link>
+              <Link to="/cookie-policy" className="hover:text-white transition-colors whitespace-nowrap">Cookie Policy</Link>
+            </div>
           </div>
         </div>
       </footer>
