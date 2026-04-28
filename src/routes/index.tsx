@@ -465,10 +465,10 @@ function LandingPage() {
       </section>
 
       {/* Services */}
-      <section id="services" className="py-12 lg:py-16 px-6 bg-white border-y border-slate-100 scroll-mt-20">
+      <section id="scope" className="py-12 lg:py-16 px-6 bg-white border-y border-slate-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Our Services</p>
+            <p className="text-sm font-semibold text-rose-800 uppercase tracking-wider mb-3">Scope of Services</p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               How can we help you?
             </h2>
