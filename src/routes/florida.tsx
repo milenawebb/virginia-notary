@@ -159,7 +159,7 @@ function FloridaPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden">
+    <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-clip">
       <FloridaHeader />
 
       {/* Hero */}
