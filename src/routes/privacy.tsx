@@ -10,7 +10,16 @@ export const Route = createFileRoute("/privacy")({
         content:
           "How Virginia Notary collects, uses, discloses, and protects your personal information, including CCPA/CPRA rights for US residents.",
       },
+      { property: "og:title", content: "Privacy Policy — Virginia Notary" },
+      {
+        property: "og:description",
+        content:
+          "How Virginia Notary collects, uses, and protects your personal information, with US state privacy rights details.",
+      },
+      { property: "og:url", content: "https://virginia-notary.com/privacy" },
+      { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "canonical", href: "https://virginia-notary.com/privacy" }],
   }),
   component: PrivacyPage,
 });

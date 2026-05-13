@@ -11,8 +11,31 @@ import { FloridaHeader } from "@/components/FloridaHeader";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
 import hypeStreetLogo from "@/assets/hype-street-logo.png";
 
-const PAGE_TITLE = "Virginia Notary for Florida Real Estate Closings | RON Notary Services";
-const PAGE_DESC = "Need a notary for your Florida real estate closing? Virginia Notary provides certified Remote Online Notarization for Florida buyers, sellers, and title companies. Available 7 days a week.";
+const PAGE_TITLE = "Florida Real Estate Closings — Virginia Notary";
+const PAGE_DESC = "Certified Virginia RON notary for Florida real estate closings. Same-day service for buyers, sellers, and title companies, 7 days a week.";
+
+const FAQS_DATA = [
+  {
+    q: "Is Remote Online Notarization legal for Florida real estate?",
+    a: "Yes. Florida Statute 117.265 recognizes RON performed by out-of-state notaries, including Virginia-commissioned eNotaries. Our notarizations are fully legal and accepted by Florida title companies and lenders.",
+  },
+  {
+    q: "Can a Virginia notary notarize Florida real estate documents?",
+    a: "Yes. Virginia RON notaries are authorized to notarize documents for Florida clients remotely. Virginia was one of the first states to authorize RON and our certifications are widely accepted in Florida.",
+  },
+  {
+    q: "How quickly can I get a closing notarized?",
+    a: "We offer same-day appointments 7 days a week. Book online and we'll confirm within 2 hours during business hours.",
+  },
+  {
+    q: "What do I need for a remote closing?",
+    a: "A computer, tablet, or smartphone with a camera, a valid government-issued ID, and a stable internet connection. We'll guide you through everything.",
+  },
+  {
+    q: "How much does it cost?",
+    a: "Visit our Pricing page for current rates. We offer competitive flat-rate pricing for Florida real estate closings.",
+  },
+];
 
 const JSON_LD = {
   "@context": "https://schema.org",
@@ -30,6 +53,16 @@ const JSON_LD = {
     "Certified Virginia RON notary services for Florida real estate closings, buyer and seller signings, refinances, and mortgage documents.",
 };
 
+const FAQ_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS_DATA.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export const Route = createFileRoute("/florida")({
   head: () => ({
     meta: [
@@ -45,11 +78,10 @@ export const Route = createFileRoute("/florida")({
       { name: "twitter:description", content: PAGE_DESC },
       { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
+    links: [{ rel: "canonical", href: "https://virginia-notary.com/florida" }],
     scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(JSON_LD),
-      },
+      { type: "application/ld+json", children: JSON.stringify(JSON_LD) },
+      { type: "application/ld+json", children: JSON.stringify(FAQ_JSON_LD) },
     ],
   }),
   component: FloridaPage,
@@ -113,28 +145,7 @@ const RON_FEE_NOTES = [
   "$30 flat fee for international signing (signors are outside the US)",
 ];
 
-const FAQS = [
-  {
-    q: "Is Remote Online Notarization legal for Florida real estate?",
-    a: "Yes. Florida Statute 117.265 recognizes RON performed by out-of-state notaries, including Virginia-commissioned eNotaries. Our notarizations are fully legal and accepted by Florida title companies and lenders.",
-  },
-  {
-    q: "Can a Virginia notary notarize Florida real estate documents?",
-    a: "Yes. Virginia RON notaries are authorized to notarize documents for Florida clients remotely. Virginia was one of the first states to authorize RON and our certifications are widely accepted in Florida.",
-  },
-  {
-    q: "How quickly can I get a closing notarized?",
-    a: "We offer same-day appointments 7 days a week. Book online and we'll confirm within 2 hours during business hours.",
-  },
-  {
-    q: "What do I need for a remote closing?",
-    a: "A computer, tablet, or smartphone with a camera, a valid government-issued ID, and a stable internet connection. We'll guide you through everything.",
-  },
-  {
-    q: "How much does it cost?",
-    a: "Visit our Pricing page for current rates. We offer competitive flat-rate pricing for Florida real estate closings.",
-  },
-];
+const FAQS = FAQS_DATA;
 
 function FloridaPage() {
   const [quoteOpen, setQuoteOpen] = useState(false);
