@@ -7,20 +7,22 @@ import logo from "@/assets/virginia-notary-logo.png";
 export const Route = createFileRoute("/join")({
   head: () => ({
     meta: [
-      { title: "Join Our Team — Virginia Notary" },
+      { title: "Join Our Notary Network — Virginia Notary" },
       {
         name: "description",
         content:
-          "Apply to join the Virginia Notary team. Become a commissioned remote online notary and grow your career with us.",
+          "Apply to join the Virginia Notary network. Become a commissioned remote online notary and grow your practice with our scheduling and client platform.",
       },
-      { property: "og:title", content: "Join Our Team — Virginia Notary" },
+      { property: "og:title", content: "Join Our Notary Network — Virginia Notary" },
       {
         property: "og:description",
         content:
-          "Apply to join the Virginia Notary team. Become a commissioned remote online notary and grow your career with us.",
+          "Apply to join the Virginia Notary network and grow your remote online notary practice with us.",
       },
+      { property: "og:url", content: "https://virginia-notary.com/join" },
       { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "canonical", href: "https://virginia-notary.com/join" }],
   }),
   component: JoinPage,
 });
