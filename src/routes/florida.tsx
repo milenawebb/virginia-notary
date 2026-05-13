@@ -145,28 +145,7 @@ const RON_FEE_NOTES = [
   "$30 flat fee for international signing (signors are outside the US)",
 ];
 
-const FAQS = [
-  {
-    q: "Is Remote Online Notarization legal for Florida real estate?",
-    a: "Yes. Florida Statute 117.265 recognizes RON performed by out-of-state notaries, including Virginia-commissioned eNotaries. Our notarizations are fully legal and accepted by Florida title companies and lenders.",
-  },
-  {
-    q: "Can a Virginia notary notarize Florida real estate documents?",
-    a: "Yes. Virginia RON notaries are authorized to notarize documents for Florida clients remotely. Virginia was one of the first states to authorize RON and our certifications are widely accepted in Florida.",
-  },
-  {
-    q: "How quickly can I get a closing notarized?",
-    a: "We offer same-day appointments 7 days a week. Book online and we'll confirm within 2 hours during business hours.",
-  },
-  {
-    q: "What do I need for a remote closing?",
-    a: "A computer, tablet, or smartphone with a camera, a valid government-issued ID, and a stable internet connection. We'll guide you through everything.",
-  },
-  {
-    q: "How much does it cost?",
-    a: "Visit our Pricing page for current rates. We offer competitive flat-rate pricing for Florida real estate closings.",
-  },
-];
+const FAQS = FAQS_DATA;
 
 function FloridaPage() {
   const [quoteOpen, setQuoteOpen] = useState(false);
