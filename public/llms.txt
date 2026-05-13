@@ -1,0 +1,18 @@
+# Virginia Notary
+
+> Certified Virginia notary offering Remote Online Notarization (RON) and mobile notary services to clients across all 50 states and internationally, 7 days a week.
+
+Virginia Notary is a licensed and bonded notary public service based in Charlottesville, Virginia. We specialize in Remote Online Notarization for real estate closings, business contracts, medical directives, family documents, and motor vehicle paperwork. Florida real estate closings are a particular focus given Virginia's RON reciprocity.
+
+## Pages
+
+- [Home](/): Overview of services, pricing, how it works, FAQ, and contact information.
+- [Florida Real Estate Closings](/florida): RON notary services for Florida buyers, sellers, and title companies.
+- [Book Appointment](/book): Schedule a remote or mobile notary appointment online.
+- [Join Our Network](/join): Apply to join the Virginia Notary provider network.
+
+## Optional
+
+- [Privacy Policy](/privacy): How we collect, use, and protect personal information.
+- [Terms & Conditions](/terms): Terms governing use of the website and services.
+- [Cookie Policy](/cookie-policy): Cookie usage and consent information.
