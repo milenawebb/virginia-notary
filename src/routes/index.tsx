@@ -13,6 +13,43 @@ import logo from "@/assets/virginia-notary-logo.png";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
 import hypeStreetLogo from "@/assets/hype-street-logo.png";
 
+const HOME_FAQS = [
+  { q: "What is Remote Online Notarization?", a: "RON allows you to have documents notarized via live video call, without needing to meet in person. It's legal, secure, and accepted in all 50 states." },
+  { q: "What do I need for a RON session?", a: "A computer or smartphone with camera and microphone, a valid government-issued photo ID, and an internet connection." },
+  { q: "How long does it take?", a: "Most sessions take 15-30 minutes depending on the number of documents." },
+  { q: "Is RON legally accepted everywhere?", a: "RON documents notarized in Virginia are accepted in all 50 states and internationally in most countries." },
+  { q: "What are your fees?", a: "Fees vary by document type and quantity. Request a free quote or view our fee schedule." },
+  { q: "Do you offer emergency services?", a: "Yes! Short notice and emergency notarizations are always welcome. Call (540) 603-0359 anytime." },
+];
+
+const HOME_JSON_LD = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Virginia Notary",
+    url: "https://virginia-notary.com",
+    logo: "https://virginia-notary.com/og-image.png",
+    telephone: "(540) 603-0359",
+    email: "notary@virginia-notary.com",
+    address: { "@type": "PostalAddress", addressLocality: "Charlottesville", addressRegion: "VA", postalCode: "22911", addressCountry: "US" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Virginia Notary",
+    url: "https://virginia-notary.com",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: HOME_FAQS.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -27,7 +64,7 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week.",
       },
-      { property: "og:url", content: "https://virginia-notary.com" },
+      { property: "og:url", content: "https://virginia-notary.com/" },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "https://virginia-notary.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -35,6 +72,11 @@ export const Route = createFileRoute("/")({
       { name: "twitter:description", content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week." },
       { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
+    links: [{ rel: "canonical", href: "https://virginia-notary.com/" }],
+    scripts: HOME_JSON_LD.map((data) => ({
+      type: "application/ld+json",
+      children: JSON.stringify(data),
+    })),
   }),
   component: LandingPage,
 });
