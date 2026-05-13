@@ -12,16 +12,18 @@ export const Route = createFileRoute("/book")({
       {
         name: "description",
         content:
-          "Schedule your Remote Online Notarization with Virginia Notary. Available 7 days a week, including evenings and holidays.",
+          "Schedule your Remote Online or Mobile Notary appointment with Virginia Notary. Available 7 days a week, including evenings and holidays.",
       },
       { property: "og:title", content: "Book Your Appointment — Virginia Notary" },
       {
         property: "og:description",
         content:
-          "Schedule your Remote Online Notarization with Virginia Notary. Available 7 days a week.",
+          "Schedule your Remote Online or Mobile Notary appointment with Virginia Notary. Available 7 days a week.",
       },
+      { property: "og:url", content: "https://virginia-notary.com/book" },
       { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "canonical", href: "https://virginia-notary.com/book" }],
   }),
   component: BookPage,
 });
@@ -143,6 +145,17 @@ function BookPage() {
           <ArrowLeft className="h-4 w-4" />
           Back to Home
         </Link>
+
+        <header className="mt-6">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Book Your Appointment
+          </h1>
+          <p className="mt-3 text-base text-slate-600 max-w-2xl">
+            Use the form below to schedule your Remote Online Notarization or Mobile Notary
+            appointment with Virginia Notary. We're available 7 days a week, including evenings and
+            holidays — same-day and emergency appointments welcome.
+          </p>
+        </header>
 
         <div className="mt-6 flex-1 flex flex-col">
           <iframe
