@@ -10,7 +10,16 @@ export const Route = createFileRoute("/cookie-policy")({
         content:
           "Learn how Virginia Notary uses cookies and similar technologies, and how to manage your cookie preferences.",
       },
+      { property: "og:title", content: "Cookie Policy — Virginia Notary" },
+      {
+        property: "og:description",
+        content:
+          "How Virginia Notary uses cookies and similar tracking technologies, and how you can manage your preferences.",
+      },
+      { property: "og:url", content: "https://virginia-notary.com/cookie-policy" },
+      { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "canonical", href: "https://virginia-notary.com/cookie-policy" }],
   }),
   component: CookiePolicyPage,
 });

@@ -10,7 +10,16 @@ export const Route = createFileRoute("/terms")({
         content:
           "Terms and conditions governing your use of the virginia-notary.com website and related services.",
       },
+      { property: "og:title", content: "Terms & Conditions — Virginia Notary" },
+      {
+        property: "og:description",
+        content:
+          "The terms and conditions that govern your use of virginia-notary.com and Virginia Notary services.",
+      },
+      { property: "og:url", content: "https://virginia-notary.com/terms" },
+      { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "canonical", href: "https://virginia-notary.com/terms" }],
   }),
   component: TermsPage,
 });
