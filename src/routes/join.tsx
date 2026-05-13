@@ -145,6 +145,17 @@ function JoinPage() {
           Back to Home
         </Link>
 
+        <header className="mt-6">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Join Our Notary Network
+          </h1>
+          <p className="mt-3 text-base text-slate-600 max-w-2xl">
+            Are you a commissioned notary public looking to grow your practice? Apply below to join
+            the Virginia Notary network. We provide scheduling, client referrals, and a modern
+            platform so you can focus on serving signers across Virginia and beyond.
+          </p>
+        </header>
+
         <div className="mt-6 flex-1 flex flex-col">
           <iframe
             title="Apply to join the Virginia Notary team"
