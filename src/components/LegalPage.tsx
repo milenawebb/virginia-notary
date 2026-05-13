@@ -4,6 +4,7 @@ import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/virginia-notary-logo.png";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
+import hypeStreetLogo from "@/assets/hype-street-logo.png";
 
 const NAV_LINKS = [
   { href: "/#services", label: "Services" },
@@ -138,17 +139,23 @@ export function LegalPage({
           <Link to="/" aria-label="Virginia Notary — Home" className="shrink-0">
             <img src={logoDark} alt="Virginia Notary" className="h-10 w-auto" />
           </Link>
-          <p className="text-center order-last lg:order-none lg:text-left">
-            © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
-            <a
-              href="https://opensked.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity"
-            >
-              OpenSked™
-            </a>
-          </p>
+          <div className="order-last lg:order-none flex flex-col items-center gap-2 lg:flex-row lg:flex-wrap lg:gap-x-2 lg:text-left text-center">
+            <p>
+              © {new Date().getFullYear()} Virginia Notary. All Rights Reserved. Powered by{" "}
+              <a
+                href="https://opensked.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity"
+              >
+                OpenSked™
+              </a>
+            </p>
+            <span className="inline-flex items-center gap-1.5">
+              Web design by
+              <img src={hypeStreetLogo} alt="Hype Street" className="h-5 w-auto" />
+            </span>
+          </div>
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 shrink-0">
             <Link to="/privacy" className="hover:text-white transition-colors whitespace-nowrap">
               Privacy
