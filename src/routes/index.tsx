@@ -152,14 +152,7 @@ const RON_FEE_NOTES = [
   "$30 flat fee for international signing (signors are outside the US)",
 ];
 
-const FAQS = [
-  { q: "What is Remote Online Notarization?", a: "RON allows you to have documents notarized via live video call, without needing to meet in person. It's legal, secure, and accepted in all 50 states." },
-  { q: "What do I need for a RON session?", a: "A computer or smartphone with camera and microphone, a valid government-issued photo ID, and an internet connection." },
-  { q: "How long does it take?", a: "Most sessions take 15-30 minutes depending on the number of documents." },
-  { q: "Is RON legally accepted everywhere?", a: "RON documents notarized in Virginia are accepted in all 50 states and internationally in most countries." },
-  { q: "What are your fees?", a: "Fees vary by document type and quantity. Request a free quote or view our fee schedule." },
-  { q: "Do you offer emergency services?", a: "Yes! Short notice and emergency notarizations are always welcome. Call (540) 603-0359 anytime." },
-];
+const FAQS = HOME_FAQS;
 
 const CONTACT_ITEMS = [
   { icon: MapPin, label: "Location", value: "Charlottesville, VA 22911" },
