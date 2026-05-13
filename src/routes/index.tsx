@@ -765,7 +765,7 @@ function LandingPage() {
                 OpenSked™
               </a>
             </p>
-            <span className="inline-flex items-center gap-2">
+            <span className="inline-flex items-center gap-0.5">
               Web design by
               <a href="https://hype-street.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <img src={hypeStreetLogo} alt="Hype Street" className="h-9 w-auto" />
