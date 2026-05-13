@@ -78,11 +78,10 @@ export const Route = createFileRoute("/florida")({
       { name: "twitter:description", content: PAGE_DESC },
       { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
+    links: [{ rel: "canonical", href: "https://virginia-notary.com/florida" }],
     scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(JSON_LD),
-      },
+      { type: "application/ld+json", children: JSON.stringify(JSON_LD) },
+      { type: "application/ld+json", children: JSON.stringify(FAQ_JSON_LD) },
     ],
   }),
   component: FloridaPage,
