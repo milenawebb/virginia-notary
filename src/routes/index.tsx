@@ -739,7 +739,7 @@ function LandingPage() {
               Join our Network
             </h2>
             <p className="text-base lg:text-lg text-slate-300 mt-5 max-w-2xl mx-auto leading-relaxed">
-              Are you a Notary Public looking to grow your business? Sign in to your OpenSked™ provider account
+              Are you a Notary Public looking to grow your business? Sign in to your OpenSked℠ provider account
               to manage appointments, accept new clients, and access training resources.
             </p>
           </div>
@@ -756,7 +756,7 @@ function LandingPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Existing Notaries</h3>
               <p className="text-sm text-slate-300 leading-relaxed mb-5">
-                Already part of our network? Sign in to your OpenSked™ notary portal.
+                Already part of our network? Sign in to your OpenSked℠ notary portal.
               </p>
               <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-300 group-hover:text-rose-200">
                 Notary Login <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -772,7 +772,7 @@ function LandingPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2">New Notaries</h3>
               <p className="text-sm text-rose-50 leading-relaxed mb-5">
-                Become a certified notary partner and start receiving client bookings through OpenSked™.
+                Become a certified notary partner and start receiving client bookings through OpenSked℠.
               </p>
               <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white">
                 Apply to Join <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -797,7 +797,7 @@ function LandingPage() {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity"
               >
-                OpenSked™
+                OpenSked℠
               </a>
             </p>
             <span className="inline-flex items-center gap-0.5">

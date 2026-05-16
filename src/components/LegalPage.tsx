@@ -148,7 +148,7 @@ export function LegalPage({
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity"
               >
-                OpenSked™
+                OpenSked℠
               </a>
             </p>
             <span className="inline-flex items-center gap-0.5">
