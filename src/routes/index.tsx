@@ -348,10 +348,12 @@ function LandingPage() {
               type="button"
               size="lg"
               variant="outline"
-              onClick={() => setQuoteOpen(true)}
+              onClick={() => {
+                document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="rounded-full px-10 py-6 text-base font-semibold border-slate-200 bg-white shadow-sm w-full sm:w-auto"
             >
-              Get a Free Quote
+              Explore Pricing
             </Button>
           </div>
 
@@ -594,13 +596,23 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-10 flex flex-col items-center gap-4">
             <Link to="/book">
               <Button size="lg" className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-10 py-6 text-base font-semibold shadow-xl shadow-rose-900/30">
                 Book Your Notarization
                 <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
             </Link>
+            <p className="text-sm text-slate-600">Have a custom order or questions? Get a free quote.</p>
+            <Button
+              type="button"
+              size="lg"
+              variant="outline"
+              onClick={() => setQuoteOpen(true)}
+              className="rounded-full px-10 py-6 text-base font-semibold border-rose-800 text-rose-800 hover:bg-rose-50 hover:text-rose-900 bg-white shadow-sm"
+            >
+              Get a Free Quote
+            </Button>
           </div>
         </div>
       </section>
