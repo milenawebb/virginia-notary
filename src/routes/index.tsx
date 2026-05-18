@@ -348,10 +348,12 @@ function LandingPage() {
               type="button"
               size="lg"
               variant="outline"
-              onClick={() => setQuoteOpen(true)}
+              onClick={() => {
+                document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="rounded-full px-10 py-6 text-base font-semibold border-slate-200 bg-white shadow-sm w-full sm:w-auto"
             >
-              Get a Free Quote
+              Explore Pricing
             </Button>
           </div>
 
