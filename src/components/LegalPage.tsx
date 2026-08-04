@@ -4,7 +4,7 @@ import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/virginia-notary-logo.png";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
-import hypeStreetLogo from "@/assets/hype-street-logo.png";
+import fifthExitLogo from "@/assets/fifthexit-logo-for-dark.png.asset.json";
 
 const NAV_LINKS = [
   { href: "/#services", label: "Services" },
@@ -153,8 +153,8 @@ export function LegalPage({
             </p>
             <span className="inline-flex items-center gap-0.5">
               Web design by
-              <a href="https://hype-street.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <img src={hypeStreetLogo} alt="Hype Street" className="h-9 w-auto" />
+              <a href="https://fifthexit.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <img src={fifthExitLogo.url} alt="Fifth Exit" className="h-4 w-auto" />
               </a>
             </span>
           </div>

@@ -11,7 +11,7 @@ import { QuoteFormModal } from "@/components/QuoteFormModal";
 import globalNetwork from "@/assets/global-network.jpg";
 import logo from "@/assets/virginia-notary-logo.png";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
-import hypeStreetLogo from "@/assets/hype-street-logo.png";
+import fifthExitLogo from "@/assets/fifthexit-logo-for-dark.png.asset.json";
 
 const HOME_FAQS = [
   { q: "What is Remote Online Notarization?", a: "RON allows you to have documents notarized via live video call, without needing to meet in person. It's legal, secure, and accepted in all 50 states." },
@@ -814,8 +814,8 @@ function LandingPage() {
             </p>
             <span className="inline-flex items-center gap-0.5">
               Web design by
-              <a href="https://hype-street.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <img src={hypeStreetLogo} alt="Hype Street" className="h-9 w-auto" />
+              <a href="https://fifthexit.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <img src={fifthExitLogo.url} alt="Fifth Exit" className="h-4 w-auto" />
               </a>
             </span>
           </div>
