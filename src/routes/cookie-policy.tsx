@@ -4,13 +4,13 @@ import { LegalPage } from "@/components/LegalPage";
 export const Route = createFileRoute("/cookie-policy")({
   head: () => ({
     meta: [
-      { title: "Cookie Policy — Virginia Notary" },
+      { title: "Cookie Policy - Virginia Notary" },
       {
         name: "description",
         content:
           "Learn how Virginia Notary uses cookies and similar technologies, and how to manage your cookie preferences.",
       },
-      { property: "og:title", content: "Cookie Policy — Virginia Notary" },
+      { property: "og:title", content: "Cookie Policy - Virginia Notary" },
       {
         property: "og:description",
         content:

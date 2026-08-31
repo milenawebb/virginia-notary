@@ -11,7 +11,7 @@ import { FloridaHeader } from "@/components/FloridaHeader";
 import logoDark from "@/assets/virginia-notary-logo-dark.png";
 import fifthExitLogo from "@/assets/fifthexit-logo-for-dark.png.asset.json";
 
-const PAGE_TITLE = "Florida Real Estate Closings — Virginia Notary";
+const PAGE_TITLE = "Florida Real Estate Closings - Virginia Notary";
 const PAGE_DESC = "Certified Virginia RON notary for Florida real estate closings. Same-day service for buyers, sellers, and title companies, 7 days a week.";
 
 const FAQS_DATA = [
@@ -40,7 +40,7 @@ const FAQS_DATA = [
 const JSON_LD = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Virginia Notary — Florida Real Estate Closing Services",
+  name: "Virginia Notary: Florida Real Estate Closing Services",
   provider: {
     "@type": "NotaryService",
     name: "Virginia Notary",
@@ -109,7 +109,7 @@ const WHY_CARDS = [
 const STEPS = [
   { n: "01", icon: CalendarCheck, title: "Book Online", desc: "Schedule your appointment at virginia-notary.com/book in minutes. Same-day availability." },
   { n: "02", icon: ShieldCheck, title: "Verify Your Identity", desc: "Complete a quick, secure digital ID verification before your appointment." },
-  { n: "03", icon: Video, title: "Connect via Video Call", desc: "Join your notary via secure video call from anywhere in Florida — your home, office, or closing table." },
+  { n: "03", icon: Video, title: "Connect via Video Call", desc: "Join your notary via secure video call from anywhere in Florida: your home, office, or closing table." },
   { n: "04", icon: FileText, title: "Receive Your Documents", desc: "Your notarized documents are delivered digitally and accepted by Florida title companies and lenders." },
 ];
 
@@ -190,7 +190,7 @@ function FloridaPage() {
             </span>
           </h1>
           <p className="lg:text-xl text-slate-500 mt-6 max-w-3xl mx-auto leading-relaxed text-base">
-            Certified RON notary serving Florida buyers, sellers, title companies, and real estate attorneys —
+            Certified RON notary serving Florida buyers, sellers, title companies, and real estate attorneys,
             remotely via secure video call. No travel required.
           </p>
 
@@ -452,7 +452,7 @@ function FloridaPage() {
       {/* Footer */}
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
-          <Link to="/" aria-label="Virginia Notary — Home" className="shrink-0">
+          <Link to="/" aria-label="Virginia Notary - Home" className="shrink-0">
             <img src={logoDark} alt="Virginia Notary" className="h-11 w-auto" />
           </Link>
           <div className="order-last lg:order-none flex flex-col items-center gap-2 lg:flex-row lg:flex-wrap lg:gap-x-2 lg:text-left text-center">

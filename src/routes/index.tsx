@@ -53,13 +53,13 @@ const HOME_JSON_LD = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Virginia Notary — RON & Mobile Notary Services" },
+      { title: "Virginia Notary: RON & Mobile Notary Services" },
       {
         name: "description",
         content:
           "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week.",
       },
-      { property: "og:title", content: "Virginia Notary — RON & Mobile Notary Services" },
+      { property: "og:title", content: "Virginia Notary: RON & Mobile Notary Services" },
       {
         property: "og:description",
         content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week.",
@@ -68,7 +68,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { property: "og:image", content: "https://virginia-notary.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Virginia Notary — RON & Mobile Notary Services" },
+      { name: "twitter:title", content: "Virginia Notary: RON & Mobile Notary Services" },
       { name: "twitter:description", content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week." },
       { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
@@ -223,7 +223,7 @@ function LandingPage() {
           <Link to="/" className="flex items-center shrink-0">
             <img
               src={logo}
-              alt="Virginia Notary — RON & Mobile Services"
+              alt="Virginia Notary: RON & Mobile Services"
               className="h-14 sm:h-16 w-auto"
             />
           </Link>
@@ -399,10 +399,10 @@ function LandingPage() {
                   Services Without Boundaries
                 </h2>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  <span className="font-semibold text-slate-900">Virginia Notary</span> is a trusted network of certified, bonded, and insured notary professionals dedicated to making the notarization process simple, secure, and accessible — no matter where you are in the world.
+                  <span className="font-semibold text-slate-900">Virginia Notary</span> is a trusted network of certified, bonded, and insured notary professionals dedicated to making the notarization process simple, secure, and accessible, no matter where you are in the world.
                 </p>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  Based in the Commonwealth of Virginia, our notaries are uniquely positioned to serve clients across all 50 United States and internationally. Virginia's progressive Remote Online Notarization laws allow our certified electronic notaries to legally notarize documents for clients located anywhere in the world — from London to Tokyo, Dubai to São Paulo — as long as our notaries are physically present in Virginia at the time of signing.
+                  Based in the Commonwealth of Virginia, our notaries are uniquely positioned to serve clients across all 50 United States and internationally. Virginia's progressive Remote Online Notarization laws allow our certified electronic notaries to legally notarize documents for clients located anywhere in the world, from London to Tokyo, Dubai to São Paulo, as long as our notaries are physically present in Virginia at the time of signing.
                 </p>
 
                 <h3 className="mt-8 text-xl font-bold text-slate-900">The Virginia Advantage</h3>
@@ -541,7 +541,7 @@ function LandingPage() {
               Transparent, flat-rate pricing
             </h2>
             <p className="text-lg text-slate-500 mt-4 max-w-3xl mx-auto">
-              Every package includes ID proofing and signatures that don't require notarization — no hidden fees.
+              Every package includes ID proofing and signatures that don't require notarization, with no hidden fees.
             </p>
           </div>
 
@@ -625,7 +625,7 @@ function LandingPage() {
             Notarize in 3 simple steps
           </h2>
           <p className="text-lg text-slate-400 mb-16 max-w-3xl mx-auto">
-            From booking to sealed PDF in under 30 minutes — no appointments in person, no traffic, no paperwork.
+            From booking to sealed PDF in under 30 minutes: no appointments in person, no traffic, no paperwork.
           </p>
 
           <div className="grid sm:grid-cols-3 gap-8">
@@ -797,7 +797,7 @@ function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
-          <Link to="/" aria-label="Virginia Notary — Home" className="shrink-0">
+          <Link to="/" aria-label="Virginia Notary - Home" className="shrink-0">
             <img src={logoDark} alt="Virginia Notary" className="h-11 w-auto" />
           </Link>
           <div className="order-last lg:order-none flex flex-col items-center gap-2 lg:flex-row lg:flex-wrap lg:gap-x-2 lg:text-left text-center">

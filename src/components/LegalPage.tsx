@@ -29,13 +29,13 @@ export function LegalPage({
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-clip flex flex-col">
-      {/* Nav — matches homepage */}
+      {/* Nav - matches homepage */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-3 lg:py-4">
           <Link to="/" className="flex items-center shrink-0">
             <img
               src={logo}
-              alt="Virginia Notary — RON & Mobile services"
+              alt="Virginia Notary: RON & Mobile services"
               className="h-14 sm:h-16 w-auto"
             />
           </Link>
@@ -133,10 +133,10 @@ export function LegalPage({
         </div>
       </main>
 
-      {/* Footer — matches homepage */}
+      {/* Footer - matches homepage */}
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
-          <Link to="/" aria-label="Virginia Notary — Home" className="shrink-0">
+          <Link to="/" aria-label="Virginia Notary - Home" className="shrink-0">
             <img src={logoDark} alt="Virginia Notary" className="h-10 w-auto" />
           </Link>
           <div className="order-last lg:order-none flex flex-col items-center gap-2 lg:flex-row lg:flex-wrap lg:gap-x-2 lg:text-left text-center">
