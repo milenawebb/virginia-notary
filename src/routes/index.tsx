@@ -399,10 +399,10 @@ function LandingPage() {
                   Services Without Boundaries
                 </h2>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  <span className="font-semibold text-slate-900">Virginia Notary</span> is a trusted network of certified, bonded, and insured notary professionals dedicated to making the notarization process simple, secure, and accessible — no matter where you are in the world.
+                  <span className="font-semibold text-slate-900">Virginia Notary</span> is a trusted network of certified, bonded, and insured notary professionals dedicated to making the notarization process simple, secure, and accessible, no matter where you are in the world.
                 </p>
                 <p className="mt-4 text-slate-600 leading-relaxed">
-                  Based in the Commonwealth of Virginia, our notaries are uniquely positioned to serve clients across all 50 United States and internationally. Virginia's progressive Remote Online Notarization laws allow our certified electronic notaries to legally notarize documents for clients located anywhere in the world — from London to Tokyo, Dubai to São Paulo — as long as our notaries are physically present in Virginia at the time of signing.
+                  Based in the Commonwealth of Virginia, our notaries are uniquely positioned to serve clients across all 50 United States and internationally. Virginia's progressive Remote Online Notarization laws allow our certified electronic notaries to legally notarize documents for clients located anywhere in the world, from London to Tokyo, Dubai to São Paulo, as long as our notaries are physically present in Virginia at the time of signing.
                 </p>
 
                 <h3 className="mt-8 text-xl font-bold text-slate-900">The Virginia Advantage</h3>
@@ -541,7 +541,7 @@ function LandingPage() {
               Transparent, flat-rate pricing
             </h2>
             <p className="text-lg text-slate-500 mt-4 max-w-3xl mx-auto">
-              Every package includes ID proofing and signatures that don't require notarization — no hidden fees.
+              Every package includes ID proofing and signatures that don't require notarization, with no hidden fees.
             </p>
           </div>
 
@@ -625,7 +625,7 @@ function LandingPage() {
             Notarize in 3 simple steps
           </h2>
           <p className="text-lg text-slate-400 mb-16 max-w-3xl mx-auto">
-            From booking to sealed PDF in under 30 minutes — no appointments in person, no traffic, no paperwork.
+            From booking to sealed PDF in under 30 minutes: no appointments in person, no traffic, no paperwork.
           </p>
 
           <div className="grid sm:grid-cols-3 gap-8">

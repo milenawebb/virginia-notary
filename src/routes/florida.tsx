@@ -109,7 +109,7 @@ const WHY_CARDS = [
 const STEPS = [
   { n: "01", icon: CalendarCheck, title: "Book Online", desc: "Schedule your appointment at virginia-notary.com/book in minutes. Same-day availability." },
   { n: "02", icon: ShieldCheck, title: "Verify Your Identity", desc: "Complete a quick, secure digital ID verification before your appointment." },
-  { n: "03", icon: Video, title: "Connect via Video Call", desc: "Join your notary via secure video call from anywhere in Florida — your home, office, or closing table." },
+  { n: "03", icon: Video, title: "Connect via Video Call", desc: "Join your notary via secure video call from anywhere in Florida: your home, office, or closing table." },
   { n: "04", icon: FileText, title: "Receive Your Documents", desc: "Your notarized documents are delivered digitally and accepted by Florida title companies and lenders." },
 ];
 
@@ -190,7 +190,7 @@ function FloridaPage() {
             </span>
           </h1>
           <p className="lg:text-xl text-slate-500 mt-6 max-w-3xl mx-auto leading-relaxed text-base">
-            Certified RON notary serving Florida buyers, sellers, title companies, and real estate attorneys —
+            Certified RON notary serving Florida buyers, sellers, title companies, and real estate attorneys,
             remotely via secure video call. No travel required.
           </p>
 

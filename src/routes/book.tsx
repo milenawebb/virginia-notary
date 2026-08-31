@@ -153,7 +153,7 @@ function BookPage() {
           <p className="mt-3 text-base text-slate-600 max-w-2xl">
             Use the form below to schedule your Remote Online Notarization or Mobile Notary
             appointment with Virginia Notary. We're available 7 days a week, including evenings and
-            holidays — same-day and emergency appointments welcome.
+            holidays, with same-day and emergency appointments welcome.
           </p>
         </header>
 
