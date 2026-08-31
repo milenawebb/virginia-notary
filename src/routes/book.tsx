@@ -8,13 +8,13 @@ import logoDark from "@/assets/virginia-notary-logo-dark.png";
 export const Route = createFileRoute("/book")({
   head: () => ({
     meta: [
-      { title: "Book Your Appointment — Virginia Notary" },
+      { title: "Book Your Appointment - Virginia Notary" },
       {
         name: "description",
         content:
           "Schedule your Remote Online or Mobile Notary appointment with Virginia Notary. Available 7 days a week, including evenings and holidays.",
       },
-      { property: "og:title", content: "Book Your Appointment — Virginia Notary" },
+      { property: "og:title", content: "Book Your Appointment - Virginia Notary" },
       {
         property: "og:description",
         content:
@@ -43,13 +43,13 @@ function BookPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-clip flex flex-col">
-      {/* Nav — matches homepage */}
+      {/* Nav - matches homepage */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-3 lg:py-4">
           <Link to="/" className="flex items-center shrink-0">
             <img
               src={logo}
-              alt="Virginia Notary — RON & Mobile services"
+              alt="Virginia Notary: RON & Mobile services"
               className="h-14 sm:h-16 w-auto"
             />
           </Link>

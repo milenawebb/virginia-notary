@@ -4,13 +4,13 @@ import { LegalPage } from "@/components/LegalPage";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms & Conditions — Virginia Notary" },
+      { title: "Terms & Conditions - Virginia Notary" },
       {
         name: "description",
         content:
           "Terms and conditions governing your use of the virginia-notary.com website and related services.",
       },
-      { property: "og:title", content: "Terms & Conditions — Virginia Notary" },
+      { property: "og:title", content: "Terms & Conditions - Virginia Notary" },
       {
         property: "og:description",
         content:

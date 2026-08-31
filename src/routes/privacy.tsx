@@ -4,13 +4,13 @@ import { LegalPage } from "@/components/LegalPage";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Virginia Notary" },
+      { title: "Privacy Policy - Virginia Notary" },
       {
         name: "description",
         content:
           "How Virginia Notary collects, uses, discloses, and protects your personal information, including CCPA/CPRA rights for US residents.",
       },
-      { property: "og:title", content: "Privacy Policy — Virginia Notary" },
+      { property: "og:title", content: "Privacy Policy - Virginia Notary" },
       {
         property: "og:description",
         content:

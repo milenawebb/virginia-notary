@@ -53,13 +53,13 @@ const HOME_JSON_LD = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Virginia Notary — RON & Mobile Notary Services" },
+      { title: "Virginia Notary: RON & Mobile Notary Services" },
       {
         name: "description",
         content:
           "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week.",
       },
-      { property: "og:title", content: "Virginia Notary — RON & Mobile Notary Services" },
+      { property: "og:title", content: "Virginia Notary: RON & Mobile Notary Services" },
       {
         property: "og:description",
         content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week.",
@@ -68,7 +68,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { property: "og:image", content: "https://virginia-notary.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Virginia Notary — RON & Mobile Notary Services" },
+      { name: "twitter:title", content: "Virginia Notary: RON & Mobile Notary Services" },
       { name: "twitter:description", content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week." },
       { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
@@ -223,7 +223,7 @@ function LandingPage() {
           <Link to="/" className="flex items-center shrink-0">
             <img
               src={logo}
-              alt="Virginia Notary — RON & Mobile Services"
+              alt="Virginia Notary: RON & Mobile Services"
               className="h-14 sm:h-16 w-auto"
             />
           </Link>
@@ -797,7 +797,7 @@ function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
-          <Link to="/" aria-label="Virginia Notary — Home" className="shrink-0">
+          <Link to="/" aria-label="Virginia Notary - Home" className="shrink-0">
             <img src={logoDark} alt="Virginia Notary" className="h-11 w-auto" />
           </Link>
           <div className="order-last lg:order-none flex flex-col items-center gap-2 lg:flex-row lg:flex-wrap lg:gap-x-2 lg:text-left text-center">
