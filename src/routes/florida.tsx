@@ -45,7 +45,7 @@ const JSON_LD = {
     "@type": "NotaryService",
     name: "Virginia Notary",
     url: "https://virginia-notary.com",
-    telephone: "(540) 603-0359",
+    telephone: "(434) 260-0070",
   },
   areaServed: { "@type": "State", name: "Florida" },
   serviceType: "Remote Online Notarization",
@@ -385,7 +385,7 @@ function FloridaPage() {
 
           <div className="grid sm:grid-cols-2 gap-4 mt-10 text-left">
             <a
-              href="tel:+15406030359"
+              href="tel:+14342600070"
               className="flex items-center gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-rose-200 hover:shadow-md transition-all"
             >
               <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center shadow-md shadow-rose-900/25 shrink-0">
@@ -393,7 +393,7 @@ function FloridaPage() {
               </div>
               <div>
                 <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Call us</p>
-                <p className="text-base font-semibold text-slate-900">(540) 603-0359</p>
+                <p className="text-base font-semibold text-slate-900">(434) 260-0070</p>
               </div>
             </a>
             <a

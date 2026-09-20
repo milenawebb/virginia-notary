@@ -19,7 +19,7 @@ const HOME_FAQS = [
   { q: "How long does it take?", a: "Most sessions take 15-30 minutes depending on the number of documents." },
   { q: "Is RON legally accepted everywhere?", a: "RON documents notarized in Virginia are accepted in all 50 states and internationally in most countries." },
   { q: "What are your fees?", a: "Fees vary by document type and quantity. Request a free quote or view our fee schedule." },
-  { q: "Do you offer emergency services?", a: "Yes! Short notice and emergency notarizations are always welcome. Call (540) 603-0359 anytime." },
+  { q: "Do you offer emergency services?", a: "Yes! Short notice and emergency notarizations are always welcome. Call (434) 260-0070 anytime." },
 ];
 
 const HOME_JSON_LD = [
@@ -29,7 +29,7 @@ const HOME_JSON_LD = [
     name: "Virginia Notary",
     url: "https://virginia-notary.com",
     logo: "https://virginia-notary.com/og-image.png",
-    telephone: "(540) 603-0359",
+    telephone: "(434) 260-0070",
     email: "notary@virginia-notary.com",
     address: { "@type": "PostalAddress", addressLocality: "Charlottesville", addressRegion: "VA", postalCode: "22911", addressCountry: "US" },
   },
@@ -157,7 +157,7 @@ const FAQS = HOME_FAQS;
 const CONTACT_ITEMS = [
   { icon: MapPin, label: "Location", value: "Charlottesville, VA 22911" },
   { icon: Mail, label: "Email", value: "notary@virginia-notary.com", href: "mailto:notary@virginia-notary.com" },
-  { icon: Phone, label: "Phone", value: "(540) 603-0359", href: "tel:+15406030359" },
+  { icon: Phone, label: "Phone", value: "(434) 260-0070", href: "tel:+14342600070" },
   { icon: Clock, label: "Hours", value: "Mon–Sun: 8am – 8pm" },
 ];
 
@@ -257,7 +257,7 @@ function LandingPage() {
           {/* Right side actions */}
           <div className="flex gap-2 sm:gap-3 items-center shrink-0">
             <a
-              href="tel:+15406030359"
+              href="tel:+14342600070"
               className="hidden xl:flex items-center gap-1.5 text-sm text-slate-600 hover:text-slate-900 transition-colors"
             >
               <Phone className="h-4 w-4" />
@@ -298,11 +298,11 @@ function LandingPage() {
               ))}
               <div className="w-full mt-2 pt-2 border-t border-slate-100 flex flex-col items-center gap-2">
                 <a
-                  href="tel:+15406030359"
+                  href="tel:+14342600070"
                   className="flex items-center gap-2 px-3 py-1 text-sm text-slate-600 hover:text-slate-900"
                 >
                   <Phone className="h-4 w-4" />
-                  (540) 603-0359
+                  (434) 260-0070
                 </a>
                 <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
                   <Button className="w-full bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full shadow-lg shadow-rose-900/25 text-sm font-medium">
