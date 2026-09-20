@@ -80,11 +80,11 @@ function BookPage() {
 
           <div className="flex gap-2 sm:gap-3 items-center shrink-0">
             <a
-              href="tel:+15406030359"
+              href="tel:+14342600070"
               className="hidden xl:flex items-center gap-1.5 text-sm text-slate-600 hover:text-slate-900 transition-colors"
             >
               <Phone className="h-4 w-4" />
-              (540) 603-0359
+              (434) 260-0070
             </a>
             <Link to="/book" className="hidden sm:block">
               <Button className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-5 sm:px-6 shadow-lg shadow-rose-900/25 text-sm font-medium">
@@ -119,11 +119,11 @@ function BookPage() {
               ))}
               <div className="w-full mt-2 pt-2 border-t border-slate-100 flex flex-col items-center gap-2">
                 <a
-                  href="tel:+15406030359"
+                  href="tel:+14342600070"
                   className="flex items-center gap-2 px-3 py-1 text-sm text-slate-600 hover:text-slate-900"
                 >
                   <Phone className="h-4 w-4" />
-                  (540) 603-0359
+                  (434) 260-0070
                 </a>
                 <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
                   <Button className="w-full bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full shadow-lg shadow-rose-900/25 text-sm font-medium">
