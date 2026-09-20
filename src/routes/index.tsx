@@ -261,7 +261,7 @@ function LandingPage() {
               className="hidden xl:flex items-center gap-1.5 text-sm text-slate-600 hover:text-slate-900 transition-colors"
             >
               <Phone className="h-4 w-4" />
-              (540) 603-0359
+              (434) 260-0070
             </a>
             <Link to="/book" className="hidden sm:block">
               <Button className="bg-gradient-to-r from-rose-800 to-pink-900 hover:from-rose-900 hover:to-pink-950 text-white rounded-full px-5 sm:px-6 shadow-lg shadow-rose-900/25 text-sm font-medium">
