@@ -1,7 +1,13 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
-import { CookieConsent } from "@/components/CookieConsent";
+import { lazy, Suspense, useEffect, useState } from "react";
 
 import appCss from "../styles.css?url";
+import animationCss from "../animations.css?url";
+import fontCss from "../fonts.css?url";
+
+const CookieConsent = lazy(() =>
+  import("@/components/CookieConsent").then((module) => ({ default: module.CookieConsent })),
+);
 
 function NotFoundComponent() {
   return (
@@ -42,11 +48,15 @@ export const Route = createRootRoute({
       { name: "twitter:description", content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week." },
     ],
     links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap",
+        href: fontCss,
+        media: "print",
+      },
+      {
+        rel: "stylesheet",
+        href: animationCss,
+        media: "print",
       },
       {
         rel: "stylesheet",
@@ -60,10 +70,20 @@ export const Route = createRootRoute({
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    // Equivalent to print/onload deferral, without inline executable attributes.
+    document.querySelectorAll<HTMLLinkElement>('link[rel="stylesheet"][media="print"]')
+      .forEach((link) => { link.media = "all"; });
+  }, []);
+
   return (
     <html lang="en">
       <head>
         <HeadContent />
+        <noscript>
+          <link rel="stylesheet" href={fontCss} />
+          <link rel="stylesheet" href={animationCss} />
+        </noscript>
       </head>
       <body>
         {children}
@@ -74,10 +94,24 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
+  const [showConsent, setShowConsent] = useState(false);
+
+  useEffect(() => {
+    try {
+      setShowConsent(!localStorage.getItem("vn-cookie-consent"));
+    } catch {
+      setShowConsent(true);
+    }
+  }, []);
+
   return (
     <>
       <Outlet />
-      <CookieConsent />
+      {showConsent && (
+        <Suspense fallback={null}>
+          <CookieConsent />
+        </Suspense>
+      )}
     </>
   );
 }

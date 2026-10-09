@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/virginia-notary-logo.png";
+import logo from "@/assets/virginia-notary-logo.webp.asset.json";
 
 export const Route = createFileRoute("/join")({
   head: () => ({
@@ -48,7 +48,7 @@ function JoinPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-3 lg:py-4">
           <Link to="/" className="flex items-center shrink-0">
             <img
-              src={logo}
+              src={logo.url} width={600} height={200} loading="eager" fetchPriority="high" decoding="async"
               alt="Virginia Notary: RON & Mobile services"
               className="h-14 sm:h-16 w-auto"
             />

@@ -6,10 +6,10 @@ import {
   ShieldCheck as ShieldIcon, Clock, Building2, Phone, Mail,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { QuoteFormModal } from "@/components/QuoteFormModal";
+import { DeferredQuoteForm } from "@/components/DeferredQuoteForm";
 import { FloridaHeader } from "@/components/FloridaHeader";
-import logoDark from "@/assets/virginia-notary-logo-dark.png";
-import fifthExitLogo from "@/assets/fifthexit-logo-for-dark.png.asset.json";
+import logoDark from "@/assets/virginia-notary-logo-dark.webp.asset.json";
+import fifthExitLogo from "@/assets/fifthexit-logo-for-dark.webp.asset.json";
 
 const PAGE_TITLE = "Florida Real Estate Closings - Virginia Notary";
 const PAGE_DESC = "Certified Virginia RON notary for Florida real estate closings. Same-day service for buyers, sellers, and title companies, 7 days a week.";
@@ -451,7 +451,7 @@ function FloridaPage() {
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
           <Link to="/" aria-label="Virginia Notary - Home" className="shrink-0">
-            <img src={logoDark} alt="Virginia Notary" className="h-11 w-auto" />
+            <img src={logoDark.url} width={600} height={200} loading="lazy" decoding="async" alt="Virginia Notary" className="h-11 w-auto" />
           </Link>
           <div className="order-last lg:order-none flex flex-col items-center gap-2 lg:flex-row lg:flex-wrap lg:gap-x-2 lg:text-left text-center">
             <p>
@@ -468,7 +468,7 @@ function FloridaPage() {
             <span className="inline-flex items-center gap-0.5">
               Web design by
               <a href="https://fifthexit.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <img src={fifthExitLogo.url} alt="Fifth Exit" className="h-4 w-auto" />
+                <img src={fifthExitLogo.url} width={300} height={100} loading="lazy" decoding="async" alt="Fifth Exit" className="h-4 w-auto" />
               </a>
             </span>
           </div>
@@ -492,7 +492,7 @@ function FloridaPage() {
         <ArrowUp className="h-5 w-5" />
       </button>
 
-      <QuoteFormModal open={quoteOpen} onOpenChange={setQuoteOpen} />
+      <DeferredQuoteForm open={quoteOpen} onOpenChange={setQuoteOpen} />
     </div>
   );
 }
