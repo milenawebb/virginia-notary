@@ -22,7 +22,7 @@ export function FloridaHeader() {
           <img src={logo} alt="Virginia Notary: RON & Mobile Services" className="h-14 sm:h-16 w-auto" />
         </Link>
 
-        <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-slate-500">
+        <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-muted-foreground">
           {NAV_LINKS.map((l) => (
             <a
               key={l.label}

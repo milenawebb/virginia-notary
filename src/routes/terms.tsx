@@ -18,6 +18,7 @@ export const Route = createFileRoute("/terms")({
       },
       { property: "og:url", content: "https://virginia-notary.com/terms" },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [{ rel: "canonical", href: "https://virginia-notary.com/terms" }],
   }),

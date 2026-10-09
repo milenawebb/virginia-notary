@@ -66,11 +66,9 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:url", content: "https://virginia-notary.com/" },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://virginia-notary.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Virginia Notary: RON & Mobile Notary Services" },
       { name: "twitter:description", content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week." },
-      { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
     links: [{ rel: "canonical", href: "https://virginia-notary.com/" }],
     scripts: HOME_JSON_LD.map((data) => ({
@@ -229,7 +227,7 @@ function LandingPage() {
           </Link>
 
           {/* Desktop nav (lg+) */}
-          <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-slate-500">
+          <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-muted-foreground">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
@@ -332,7 +330,7 @@ function LandingPage() {
             </span>
           </h1>
 
-          <p className="lg:text-xl text-slate-500 mt-6 max-w-3xl mx-auto leading-relaxed text-base">
+          <p className="lg:text-xl text-muted-foreground mt-6 max-w-3xl mx-auto leading-relaxed text-base">
             Certified Virginia Electronic Notaries serving all 50 states and International clients.<br />
             Remote Online Notarizations available 7 days a week.
           </p>
@@ -388,7 +386,7 @@ function LandingPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-slate-900 text-xs">Certified, Bonded & Insured</p>
-                    <p className="text-xs text-slate-500">Trusted notary network</p>
+                    <p className="text-xs text-muted-foreground">Trusted notary network</p>
                   </div>
                 </div>
               </div>
@@ -442,7 +440,7 @@ function LandingPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
                 Two ways to get notarized
               </h2>
-              <p className="text-sm text-slate-500 mt-3">Click a card to start your booking.</p>
+              <p className="text-sm text-muted-foreground mt-3">Click a card to start your booking.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -474,7 +472,7 @@ function LandingPage() {
 
               <div
                 aria-disabled="true"
-                className="relative block text-left rounded-3xl p-8 lg:p-10 bg-white border border-slate-100 shadow-sm opacity-60 cursor-not-allowed select-none"
+                className="relative block text-left rounded-3xl p-8 lg:p-10 bg-muted border border-slate-100 shadow-sm cursor-not-allowed select-none"
               >
                 <span className="absolute top-4 right-4 inline-flex items-center rounded-full bg-slate-900 text-white text-xs font-semibold px-3 py-1 shadow">
                   Coming Soon
@@ -493,7 +491,7 @@ function LandingPage() {
                     </li>
                   ))}
                 </ul>
-                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-400">
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground">
                   Book Mobile <ArrowRight className="h-4 w-4" />
                 </span>
               </div>
@@ -510,7 +508,7 @@ function LandingPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               How can we help you?
             </h2>
-            <p className="text-base text-slate-500 mt-3 max-w-3xl mx-auto">
+            <p className="text-base text-muted-foreground mt-3 max-w-3xl mx-auto">
               Comprehensive notary services for every type of document, all delivered with the highest professional standards.
             </p>
           </div>
@@ -525,7 +523,7 @@ function LandingPage() {
                   <s.icon className="h-4 w-4 text-white" />
                 </div>
                 <h3 className="text-sm font-bold text-slate-900 mb-1.5">{s.title}</h3>
-                <p className="text-xs text-slate-500 leading-relaxed">{s.desc}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -540,7 +538,7 @@ function LandingPage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Transparent, flat-rate pricing
             </h2>
-            <p className="text-lg text-slate-500 mt-4 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
               Every package includes ID proofing and signatures that don't require notarization, with no hidden fees.
             </p>
           </div>
@@ -652,7 +650,7 @@ function LandingPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             Ready to Get Started?
           </h2>
-          <p className="text-base lg:text-lg text-slate-500 mt-5 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base lg:text-lg text-muted-foreground mt-5 max-w-2xl mx-auto leading-relaxed">
             Schedule your Remote Online Notarization in minutes. Available 7 days a week, including evenings and holidays.
           </p>
           <div className="mt-10">
@@ -712,7 +710,7 @@ function LandingPage() {
                   <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center mb-4 shadow-lg shadow-rose-900/25 mx-auto sm:mx-0">
                     <it.icon className="h-5 w-5 text-white" />
                   </div>
-                  <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">{it.label}</p>
+                  <p className="text-muted-foreground text-xs font-semibold uppercase tracking-wider mb-1">{it.label}</p>
                   <p className="text-slate-900 font-semibold text-sm whitespace-nowrap">{it.value}</p>
                 </>
               );
@@ -777,7 +775,7 @@ function LandingPage() {
 
             <Link
               to="/join"
-              className="group block p-8 rounded-3xl bg-gradient-to-br from-rose-600 to-pink-700 hover:from-rose-500 hover:to-pink-600 transition-all hover:-translate-y-1 shadow-2xl shadow-pink-900/40"
+              className="group block p-8 rounded-3xl bg-gradient-to-br from-brand-action to-brand-action-end hover:from-brand-action-end hover:to-brand-action transition-all hover:-translate-y-1 shadow-2xl shadow-pink-900/40"
             >
               <div className="h-12 w-12 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center mb-5">
                 <UserPlus className="h-6 w-6 text-white" />
@@ -807,7 +805,7 @@ function LandingPage() {
                 href="https://opensked.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity"
+                className="text-footer-link font-semibold hover:text-footer-link-hover transition-colors"
               >
                 OpenSked℠
               </a>
