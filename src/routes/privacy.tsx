@@ -18,6 +18,7 @@ export const Route = createFileRoute("/privacy")({
       },
       { property: "og:url", content: "https://virginia-notary.com/privacy" },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [{ rel: "canonical", href: "https://virginia-notary.com/privacy" }],
   }),

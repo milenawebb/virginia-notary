@@ -62,7 +62,7 @@ export function QuoteFormModal({ open, onOpenChange }: QuoteFormModalProps) {
           <DialogTitle className="text-2xl font-bold text-slate-900">
             Get a Free Quote
           </DialogTitle>
-          <DialogDescription className="text-slate-500">
+          <DialogDescription className="text-muted-foreground">
             Tell us about your notarization needs and we'll get back to you within 1 business day.
           </DialogDescription>
         </DialogHeader>

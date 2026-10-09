@@ -72,11 +72,9 @@ export const Route = createFileRoute("/florida")({
       { property: "og:description", content: PAGE_DESC },
       { property: "og:url", content: "https://virginia-notary.com/florida" },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://virginia-notary.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: PAGE_TITLE },
       { name: "twitter:description", content: PAGE_DESC },
-      { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
     links: [{ rel: "canonical", href: "https://virginia-notary.com/florida" }],
     scripts: [
@@ -189,7 +187,7 @@ function FloridaPage() {
               Florida Real Estate Closings
             </span>
           </h1>
-          <p className="lg:text-xl text-slate-500 mt-6 max-w-3xl mx-auto leading-relaxed text-base">
+          <p className="lg:text-xl text-muted-foreground mt-6 max-w-3xl mx-auto leading-relaxed text-base">
             Certified RON notary serving Florida buyers, sellers, title companies, and real estate attorneys,
             remotely via secure video call. No travel required.
           </p>
@@ -240,7 +238,7 @@ function FloridaPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {STEPS.map((s) => (
               <div key={s.n} className="relative p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-lg transition-all">
-                <span className="absolute top-6 right-6 text-4xl font-extrabold text-slate-100">{s.n}</span>
+                <span className="absolute top-6 right-6 text-4xl font-extrabold text-muted-foreground">{s.n}</span>
                 <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-rose-800 to-pink-900 flex items-center justify-center mb-5 shadow-lg shadow-rose-900/25">
                   <s.icon className="h-6 w-6 text-white" />
                 </div>
@@ -282,7 +280,7 @@ function FloridaPage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Simple, Transparent Pricing for Florida Real Estate Closings
             </h2>
-            <p className="text-lg text-slate-500 mt-4 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
               Flat-rate pricing with no hidden fees. What you see is what you pay.
             </p>
           </div>
@@ -379,7 +377,7 @@ function FloridaPage() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Get In Touch
           </h2>
-          <p className="text-base lg:text-lg text-slate-500 mt-5 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base lg:text-lg text-muted-foreground mt-5 max-w-2xl mx-auto leading-relaxed">
             Have questions about your Florida real estate closing? Reach out and we'll get back to you the same day.
           </p>
 
@@ -392,7 +390,7 @@ function FloridaPage() {
                 <Phone className="h-5 w-5 text-white" />
               </div>
               <div>
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Call us</p>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Call us</p>
                 <p className="text-base font-semibold text-slate-900">(434) 260-0070</p>
               </div>
             </a>
@@ -404,7 +402,7 @@ function FloridaPage() {
                 <Mail className="h-5 w-5 text-white" />
               </div>
               <div>
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Email us</p>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Email us</p>
                 <p className="text-base font-semibold text-slate-900 break-all">notary@virginia-notary.com</p>
               </div>
             </a>
@@ -462,7 +460,7 @@ function FloridaPage() {
                 href="https://opensked.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-rose-700 to-pink-800 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity"
+                className="text-footer-link font-semibold hover:text-footer-link-hover transition-colors"
               >
                 OpenSked℠
               </a>

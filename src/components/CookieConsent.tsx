@@ -73,7 +73,7 @@ export function CookieConsent() {
             type="button"
             aria-label="Close"
             onClick={() => persist("rejected")}
-            className="ml-1 rounded-full p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-700 sm:hidden"
+            className="ml-1 rounded-full p-1.5 text-muted-foreground hover:bg-slate-100 hover:text-slate-700 sm:hidden"
           >
             <X className="h-4 w-4" />
           </button>

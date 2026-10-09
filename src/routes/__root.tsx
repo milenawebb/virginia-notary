@@ -37,11 +37,9 @@ export const Route = createRootRoute({
       { property: "og:url", content: "https://virginia-notary.com" },
       { property: "og:title", content: "Virginia Notary: RON & Mobile Notary Services" },
       { property: "og:description", content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week." },
-      { property: "og:image", content: "https://virginia-notary.com/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Virginia Notary: RON & Mobile Notary Services" },
       { name: "twitter:description", content: "Book a certified Virginia notary online in minutes. Remote Online Notarization and Mobile Notary services available 7 days a week." },
-      { name: "twitter:image", content: "https://virginia-notary.com/og-image.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

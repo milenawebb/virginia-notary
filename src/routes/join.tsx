@@ -21,6 +21,7 @@ export const Route = createFileRoute("/join")({
       },
       { property: "og:url", content: "https://virginia-notary.com/join" },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [{ rel: "canonical", href: "https://virginia-notary.com/join" }],
   }),
@@ -53,7 +54,7 @@ function JoinPage() {
             />
           </Link>
 
-          <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-slate-500">
+          <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-muted-foreground">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
@@ -139,7 +140,7 @@ function JoinPage() {
       <main className="flex-1 flex flex-col max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Link
           to="/"
-          className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-900 transition-colors"
+          className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-slate-900 transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           Back to Home
