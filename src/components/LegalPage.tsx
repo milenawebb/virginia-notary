@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/virginia-notary-logo.png";
-import logoDark from "@/assets/virginia-notary-logo-dark.png";
-import fifthExitLogo from "@/assets/fifthexit-logo-for-dark.png.asset.json";
+import logo from "@/assets/virginia-notary-logo.webp.asset.json";
+import logoDark from "@/assets/virginia-notary-logo-dark.webp.asset.json";
+import fifthExitLogo from "@/assets/fifthexit-logo-for-dark.webp.asset.json";
 
 const NAV_LINKS = [
   { href: "/#services", label: "Services" },
@@ -34,7 +34,7 @@ export function LegalPage({
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-3 lg:py-4">
           <Link to="/" className="flex items-center shrink-0">
             <img
-              src={logo}
+              src={logo.url} width={600} height={200} loading="eager" fetchPriority="high" decoding="async"
               alt="Virginia Notary: RON & Mobile services"
               className="h-14 sm:h-16 w-auto"
             />
@@ -137,7 +137,7 @@ export function LegalPage({
       <footer className="border-t border-slate-100 bg-slate-950 text-slate-400 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-sm lg:flex-row lg:justify-between lg:gap-4">
           <Link to="/" aria-label="Virginia Notary - Home" className="shrink-0">
-            <img src={logoDark} alt="Virginia Notary" className="h-10 w-auto" />
+            <img src={logoDark.url} width={600} height={200} loading="lazy" decoding="async" alt="Virginia Notary" className="h-10 w-auto" />
           </Link>
           <div className="order-last lg:order-none flex flex-col items-center gap-2 lg:flex-row lg:flex-wrap lg:gap-x-2 lg:text-left text-center">
             <p>
@@ -154,7 +154,7 @@ export function LegalPage({
             <span className="inline-flex items-center gap-0.5">
               Web design by
               <a href="https://fifthexit.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                <img src={fifthExitLogo.url} alt="Fifth Exit" className="h-4 w-auto" />
+                <img src={fifthExitLogo.url} width={300} height={100} loading="lazy" decoding="async" alt="Fifth Exit" className="h-4 w-auto" />
               </a>
             </span>
           </div>

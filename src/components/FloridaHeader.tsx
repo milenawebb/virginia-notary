@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/virginia-notary-logo.png";
+import logo from "@/assets/virginia-notary-logo.webp.asset.json";
 
 const NAV_LINKS: { href: string; label: string }[] = [
   { href: "/florida#how-it-works", label: "How It Works" },
@@ -19,7 +19,7 @@ export function FloridaHeader() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-3 lg:py-4">
         <Link to="/" className="flex items-center shrink-0">
-          <img src={logo} alt="Virginia Notary: RON & Mobile Services" className="h-14 sm:h-16 w-auto" />
+          <img src={logo.url} width={600} height={200} loading="eager" fetchPriority="high" decoding="async" alt="Virginia Notary: RON & Mobile Services" className="h-14 sm:h-16 w-auto" />
         </Link>
 
         <div className="hidden lg:flex gap-6 xl:gap-8 text-sm text-muted-foreground">
