@@ -7,6 +7,7 @@ interface SitemapEntry {
   path: string;
   changefreq?: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
   priority?: string;
+  lastmod?: string | null;
 }
 
 export const Route = createFileRoute("/sitemap.xml")({
@@ -21,12 +22,18 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/privacy", changefreq: "yearly", priority: "0.3" },
           { path: "/terms", changefreq: "yearly", priority: "0.3" },
           { path: "/cookie-policy", changefreq: "yearly", priority: "0.3" },
+           { path: "/blog", changefreq: "daily", priority: "0.8" },
         ];
+
+        const { readBlogArticles } = await import("@/lib/blog-read.server");
+        const articles = await readBlogArticles();
+        entries.push(...articles.map(article => ({ path: `/blog/${encodeURIComponent(article.slug)}`, lastmod: article.article_updated_at })));
 
         const urls = entries.map((e) =>
           [
             `  <url>`,
             `    <loc>${BASE_URL}${e.path}</loc>`,
+             e.lastmod ? `    <lastmod>${new Date(e.lastmod).toISOString()}</lastmod>` : null,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`,
