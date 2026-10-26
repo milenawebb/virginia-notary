@@ -822,6 +822,7 @@ function LandingPage() {
             </span>
           </div>
           <div className="flex flex-col items-center gap-3 lg:flex-row lg:gap-5 shrink-0">
+            <Link to="/blog" className="hover:text-white transition-colors whitespace-nowrap">Blog</Link>
             <Link to="/florida" className="hover:text-white transition-colors whitespace-nowrap">Florida Real Estate Closings</Link>
             <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
               <Link to="/privacy" className="hover:text-white transition-colors whitespace-nowrap">Privacy</Link>
