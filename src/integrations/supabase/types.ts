@@ -14,13 +14,116 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      blg_articles: {
+        Row: {
+          article_created_at: string | null
+          article_updated_at: string | null
+          content_html: string | null
+          faq_json_ld: Json | null
+          hero_image_url: string | null
+          id: number
+          json_ld: Json | null
+          language_code: string | null
+          meta_description: string | null
+          previous_slugs: string[]
+          slug: string
+          synced_at: string | null
+          title: string
+        }
+        Insert: {
+          article_created_at?: string | null
+          article_updated_at?: string | null
+          content_html?: string | null
+          faq_json_ld?: Json | null
+          hero_image_url?: string | null
+          id: number
+          json_ld?: Json | null
+          language_code?: string | null
+          meta_description?: string | null
+          previous_slugs?: string[]
+          slug: string
+          synced_at?: string | null
+          title: string
+        }
+        Update: {
+          article_created_at?: string | null
+          article_updated_at?: string | null
+          content_html?: string | null
+          faq_json_ld?: Json | null
+          hero_image_url?: string | null
+          id?: number
+          json_ld?: Json | null
+          language_code?: string | null
+          meta_description?: string | null
+          previous_slugs?: string[]
+          slug?: string
+          synced_at?: string | null
+          title?: string
+        }
+        Relationships: []
+      }
+      blg_sync_state: {
+        Row: {
+          id: number
+          invocation_nonce: string
+          last_run_at: string | null
+          lease_until: string | null
+          list_complete: boolean
+          list_offset: number
+          missing_ids: number[]
+          next_allowed_at: string | null
+          rate_limit_streak: number
+        }
+        Insert: {
+          id?: number
+          invocation_nonce?: string
+          last_run_at?: string | null
+          lease_until?: string | null
+          list_complete?: boolean
+          list_offset?: number
+          missing_ids?: number[]
+          next_allowed_at?: string | null
+          rate_limit_streak?: number
+        }
+        Update: {
+          id?: number
+          invocation_nonce?: string
+          last_run_at?: string | null
+          lease_until?: string | null
+          list_complete?: boolean
+          list_offset?: number
+          missing_ids?: number[]
+          next_allowed_at?: string | null
+          rate_limit_streak?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      blg_claim_sync: {
+        Args: { nonce: string }
+        Returns: {
+          id: number
+          invocation_nonce: string
+          last_run_at: string | null
+          lease_until: string | null
+          list_complete: boolean
+          list_offset: number
+          missing_ids: number[]
+          next_allowed_at: string | null
+          rate_limit_streak: number
+        }[]
+        SetofOptions: {
+          from: "*"
+          to: "blg_sync_state"
+          isOneToOne: false
+          isSetofReturn: true
+        }
+      }
+      blg_enqueue_sync: { Args: { chain_number?: number }; Returns: number }
     }
     Enums: {
       [_ in never]: never
