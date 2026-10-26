@@ -18,7 +18,7 @@ export async function syncBlog(nonce: string, chain: number) {
   let next = state.next_allowed_at ? Date.parse(state.next_allowed_at) : 0;
   let streak = state.rate_limit_streak;
   const missing = new Set(state.missing_ids);
-  const save = async (values: Record<string, unknown>) => {
+  const save = async (values: Database['public']['Tables']['blg_sync_state']['Update']) => {
     const { error } = await db.from('blg_sync_state').update(values).eq('id', 1).eq('invocation_nonce', nonce);
     if (error) throw new Error('Unable to save import progress');
   };

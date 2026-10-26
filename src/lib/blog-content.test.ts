@@ -1,4 +1,10 @@
-import { test, expect } from 'bun:test';
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+const expect = (actual: unknown) => ({
+  toBe: (expected: unknown) => assert.equal(actual, expected),
+  toContain: (expected: string) => assert.ok(String(actual).includes(expected)),
+  not: { toContain: (expected: string) => assert.ok(!String(actual).includes(expected)) },
+});
 import { BLOG_CALL_LIMIT, BLOG_DETAIL_LIMIT, BLOG_GAP_MS, cleanArticleHtml, articleSchema } from './blog-content';
 test('import waits at least 2100 milliseconds between calls', () => expect(BLOG_GAP_MS).toBe(2100));
 test('import caps total API calls at 25', () => expect(BLOG_CALL_LIMIT).toBe(25));
