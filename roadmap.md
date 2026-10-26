@@ -1,3 +1,8 @@
+# Automated blog
+- [ ] Import BabyLoveGrowth articles safely and verify real content.
+- [ ] Add blog pages, article SEO, sitemap entries and one navigation link.
+- [ ] Schedule hourly imports and verify the complete reading flow.
+
 # Mobile performance
 - [x] Remove non-critical render-blocking requests without delaying essential page styling.
 - [x] Deliver WebP images with eager header and lazy below-fold loading.
