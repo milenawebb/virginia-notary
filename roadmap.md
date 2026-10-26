@@ -1,7 +1,9 @@
 # Automated blog
-- [ ] Import BabyLoveGrowth articles safely and verify real content.
-- [ ] Add blog pages, article SEO, sitemap entries and one navigation link.
-- [ ] Schedule hourly imports and verify the complete reading flow.
+- [x] Import BabyLoveGrowth articles safely and verify real content.
+- [x] Add blog pages, article SEO, sitemap entries and one navigation link.
+- [x] Schedule hourly imports and verify the complete reading flow.
+
+The two English articles are fully imported. Hourly callbacks begin working after publishing the new endpoint. BabyLoveGrowth supplied no JSON-LD blocks for these articles; future supplied blocks are corrected and rendered automatically.
 
 # Mobile performance
 - [x] Remove non-critical render-blocking requests without delaying essential page styling.
