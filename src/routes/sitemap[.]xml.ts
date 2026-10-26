@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
-import { listBlogArticles } from "@/lib/blog.functions";
 
 const BASE_URL = "https://virginia-notary.com";
 
@@ -26,7 +25,8 @@ export const Route = createFileRoute("/sitemap.xml")({
            { path: "/blog", changefreq: "daily", priority: "0.8" },
         ];
 
-        const articles = await listBlogArticles();
+        const { readBlogArticles } = await import("@/lib/blog-read.server");
+        const articles = await readBlogArticles();
         entries.push(...articles.map(article => ({ path: `/blog/${encodeURIComponent(article.slug)}`, lastmod: article.article_updated_at })));
 
         const urls = entries.map((e) =>
