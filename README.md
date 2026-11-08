@@ -1,26 +1,48 @@
 # Virginia Notary
 
-I need a landing page for my Electronic Notary Business called Virginia Notary, sleek, modern feel that will work best with the OpenSked landing page that you built.
+Website for a remote online notarization (RON) service based in Virginia.
 
-This project was built with [Lovable](https://lovable.dev).
+Live at **[virginia-notary.com](https://virginia-notary.com)**
 
-**Live app**: https://virginia-notary-spark.lovable.app
+## The problem
 
-## Build with Lovable
+Most people booking a notary have done it the old way: find someone, drive there, sign on paper. Remote online notarization is legal, faster and usually cheaper, but it is unfamiliar enough that the first reaction is "is that actually valid?" A site that leads with booking loses those people. A site that explains everything first loses the ones who already know.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/cffb46d8-2847-48f5-894b-d76c1f0fca17).
+The other audience is different again. Title companies and real estate attorneys send repeat volume and do not need convincing that RON exists. They need to know whether this notary can handle their closings.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## The approach
+
+Answer the credibility question before asking for the booking. What RON is, that it is legal, how a session works, what someone needs to have ready. Then get out of the way and let them book. Returning and professional visitors can skip straight past it.
+
+The site is RON only. No mobile notary service, no travel, no "we also come to you." Narrowing the offer made every page easier to write, because there is one thing to explain rather than two paths to keep straight.
+
+## Notable pieces
+
+**Scoped to one service.** The temptation with a notary site is to list everything a notary can legally do. That produces a page nobody finishes reading. This one covers remote online notarization and nothing else.
+
+**Written for the first-timer.** The copy assumes no prior knowledge and avoids the legal vocabulary that makes people hesitate. Someone who has never heard of RON should be able to decide whether it fits their situation without looking anything up.
+
+**Where Revsi started.** This business was the first customer for [Revsi](https://revsi.app), my automated review request product. Running a service business myself is what made the problem obvious: the ask after a completed job is the one thing that never gets done.
+
+## Stack
+
+- React + TypeScript
+- Tailwind CSS
+- Vite
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
+git clone https://github.com/milenawebb/virginia-notary.git
+cd virginia-notary
+npm install
 npm run dev
 ```
+
+## Notes
+
+Built with AI-native tooling, primarily Lovable. Content structure and copy by hand.
+
+---
+
+Built by [Milena Webb](https://milenawebb.com) / [fifthexit](https://fifthexit.com).
